@@ -1,0 +1,38 @@
+[
+    {
+        "image": "https://placehold.co/340x221",
+        "item": "Empanada 1",
+        "score": 4,
+        "review": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab."
+    },
+    {
+        "image": "https://placehold.co/340x221",
+        "item": "Empanada 2",
+        "score": 4,
+        "review": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab."
+    },
+    {
+        "image": "https://placehold.co/340x221",
+        "item": "Empanada 3",
+        "score": 5,
+        "review": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab."
+    },
+    {
+        "image": "https://placehold.co/340x221",
+        "item": "Bebida 1",
+        "score": 4,
+        "review": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab."
+    },
+    {
+        "image": "https://placehold.co/340x221",
+        "item": "Bebida 2",
+        "score": 5,
+        "review": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab."
+    },
+    {
+        "image": "https://placehold.co/340x221",
+        "item": "Salsa 2",
+        "score": 5,
+        "review": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab."
+    }
+]

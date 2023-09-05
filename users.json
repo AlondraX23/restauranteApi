@@ -1,0 +1,18 @@
+[
+    {
+        "name": "John Doe",
+        "user": "@johnDoe",
+        "email": "johndoe@gmail.com",
+        "password": "1234abc",
+        "address": "Mountainview RdGreenwood Lake, New York(NY), 10925",
+        "profilePicture": "https://placehold.co/64x64"
+    },
+    {
+        "name": "Jane Doe",
+        "user": "@janeDoe",
+        "email": "janedoe@gmail.com",
+        "password": "5678def",
+        "address": "2851 August Lane, Shreveport, Louisiana, 71101",
+        "profilePicture": "https://placehold.co/64x64"
+    }
+]

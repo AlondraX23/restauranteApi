@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Paquete pequeño",
+        "image": "https://placehold.co/74x74",
+        "summary": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab.",
+        "bulletPoints": [
+            {
+                "point": "Sorem ipsum dolor sit amet, consectetur"
+            },
+            {
+                "point": "Nunc vulputate libero et velit"
+            },
+            {
+                "point": "Aac aliquet odio mattis adipiscing elit"
+            },
+            {
+                "point": "Class aptent taciti sociosqu ad  torquent"
+            }
+        ],
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab."
+    },
+    {
+        "title": "Paquete mediano",
+        "image": "https://placehold.co/74x74",
+        "summary": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab.",
+        "bulletPoints": [
+            {
+                "point": "Todo lo incluido en el Paquete pequeño"
+            },
+            {
+                "point": "Nunc vulputate libero et velit"
+            },
+            {
+                "point": "Aac aliquet odio mattis adipiscing elit"
+            },
+            {
+                "point": "Class aptent taciti sociosqu ad  torquent"
+            }
+        ],
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab."
+    },
+    {
+        "title": "Paquete grande",
+        "image": "https://placehold.co/74x74",
+        "summary": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab.",
+        "bulletPoints": [
+            {
+                "point": "Todo lo incluido en el Paquete mediano"
+            },
+            {
+                "point": "Nunc vulputate libero et velit"
+            },
+            {
+                "point": "Aac aliquet odio mattis adipiscing elit"
+            },
+            {
+                "point": "Class aptent taciti sociosqu ad  torquent"
+            }
+        ],
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab."
+    }
+]

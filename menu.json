@@ -1,0 +1,114 @@
+[
+    {
+        "image": "https://placehold.co/244x244",
+        "item": "Empanada 1",
+        "price": 30,
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab.",
+        "stock": 20,
+        "category": "Empanadas"
+    },
+    {
+        "image": "https://placehold.co/244x244",
+        "item": "Empanada 2",
+        "price": 30,
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab.",
+        "stock": 13,
+        "category": "Empanadas"
+    },
+    {
+        "image": "https://placehold.co/244x244",
+        "item": "Empanada 3",
+        "price": 30,
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab.",
+        "stock": 7,
+        "category": "Empanadas"
+    },
+    {
+        "image": "https://placehold.co/244x244",
+        "item": "Empanada 4",
+        "price": 30,
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab.",
+        "stock": 24,
+        "category": "Empanadas"
+    },
+    {
+        "image": "https://placehold.co/244x244",
+        "item": "Empanada 5",
+        "price": 30,
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab.",
+        "stock": 17,
+        "category": "Empanadas"
+    },
+    {
+        "image": "https://placehold.co/244x244",
+        "item": "Empanada 6",
+        "price": 30,
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab.",
+        "stock": 4,
+        "category": "Empanadas"
+    },
+    {
+        "image": "https://placehold.co/244x244",
+        "item": "Empanada 7",
+        "price": 30,
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab.",
+        "stock": 15,
+        "category": "Empanadas"
+    },
+    {
+        "image": "https://placehold.co/244x244",
+        "item": "Empanada 8",
+        "price": 30,
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab.",
+        "stock": 3,
+        "category": "Empanadas"
+    },
+    {
+        "image": "https://placehold.co/244x244",
+        "item": "Salsa 1",
+        "price": 50,
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab.",
+        "stock": 5,
+        "category": "Salsas"
+    },
+    {
+        "image": "https://placehold.co/244x244",
+        "item": "Salsa 2",
+        "price": 50,
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab.",
+        "stock": 11,
+        "category": "Salsas"
+    },
+    {
+        "image": "https://placehold.co/244x244",
+        "item": "Salsa 3",
+        "price": 50,
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab.",
+        "stock": 9,
+        "category": "Salsas"
+    },
+    {
+        "image": "https://placehold.co/244x244",
+        "item": "Bebida 1",
+        "price": 25,
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab.",
+        "stock": 9,
+        "category": "Bebidas"
+    },
+    {
+        "image": "https://placehold.co/244x244",
+        "item": "Bebida 2",
+        "price": 25,
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab.",
+        "stock": 9,
+        "category": "Bebidas"
+    },
+    {
+        "image": "https://placehold.co/244x244",
+        "item": "Bebida 3",
+        "price": 25,
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab.",
+        "stock": 9,
+        "category": "Bebidas"
+    }
+]

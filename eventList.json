@@ -1,0 +1,71 @@
+[
+    {
+        "category": "Empanadas",
+        "menu": [
+            {
+                "item": "Empanada 1"
+            },
+            {
+                "item": "Empanada 2"
+            },
+            {
+                "item": "Empanada 3"
+            },
+            {
+                "item": "Empanada 4"
+            },
+            {
+                "item": "Empanada 5"
+            },
+            {
+                "item": "Empanada 6"
+            },
+            {
+                "item": "Empanada 7"
+            },
+            {
+                "item": "Empanada 8"
+            }
+        ]
+    },
+    {
+        "category": "Salsas",
+        "menu": [
+            {
+                "item": "Salsa 1"
+            },
+            {
+                "item": "Salsa 2"
+            },
+            {
+                "item": "Salsa 3"
+            },
+            {
+                "item": "Salsa 4"
+            },
+            {
+                "item": "Salsa 5"
+            }
+        ]
+    },
+    {
+        "category": "Bebidas",
+        "menu": [
+            {
+                "item": "Bebida 1"
+            },
+            {
+                "item": "Bebida 2"
+            },
+            {
+                "item": "Bebida 3"
+            },
+            {
+                "item": "Bebida 4"
+            },
+            {
+                "item": "Bebida 5"
+            }
+        ]
+    }
+]
