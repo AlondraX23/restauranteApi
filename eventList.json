@@ -3,28 +3,28 @@
         "category": "Empanadas",
         "menu": [
             {
-                "item": "Empanada 1"
+                "flavor": "Empanada de carne"
             },
             {
-                "item": "Empanada 2"
+                "flavor": "Empanada de pollo"
             },
             {
-                "item": "Empanada 3"
+                "flavor": "Empanada de queso"
             },
             {
-                "item": "Empanada 4"
+                "flavor": "Empanada hawaiiana"
             },
             {
-                "item": "Empanada 5"
+                "flavor": "Empanada de champiñones"
             },
             {
-                "item": "Empanada 6"
+                "flavor": "Empanada de piña"
             },
             {
-                "item": "Empanada 7"
+                "flavor": "Empanada de cajeta"
             },
             {
-                "item": "Empanada 8"
+                "flavor": "Empanada de mole"
             }
         ]
     },
@@ -32,19 +32,19 @@
         "category": "Salsas",
         "menu": [
             {
-                "item": "Salsa 1"
+                "flavor": "Salsa roja"
             },
             {
-                "item": "Salsa 2"
+                "flavor": "Salsa verde"
             },
             {
-                "item": "Salsa 3"
+                "flavor": "Salsa de aguacate"
             },
             {
-                "item": "Salsa 4"
+                "flavor": "Salsa de chile habanero"
             },
             {
-                "item": "Salsa 5"
+                "flavor": "Salsa de cacahuate"
             }
         ]
     },
@@ -52,19 +52,19 @@
         "category": "Bebidas",
         "menu": [
             {
-                "item": "Bebida 1"
+                "flavor": "Coca-Cola"
             },
             {
-                "item": "Bebida 2"
+                "flavor": "Pepsi"
             },
             {
-                "item": "Bebida 3"
+                "flavor": "Jarritos"
             },
             {
-                "item": "Bebida 4"
+                "flavor": "Horchata"
             },
             {
-                "item": "Bebida 5"
+                "flavor": "Tamarindo"
             }
         ]
     }
