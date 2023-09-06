@@ -1,13 +1,13 @@
 [
     {
         "title": "Sobre nosotros",
-        "paragraph": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab.",
-        "image": "https://placehold.co/471x349",
-        "figcaption": "Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab."
+        "paragraph": "En el corazón de México, nació la idea de compartir la auténtica delicia de las empanadas con el mundo. En [Nombre de la Empresa], nuestra historia comienza con una familia apasionada por la cocina mexicana y un deseo profundo de preservar las tradiciones culinarias que han perdurado por generaciones."
+        "image": "<iframe src='https://editorialtelevisa.brightspotcdn.com/wp-content/uploads/2021/02/mini-empanadas-argentinas.jpg' width='959' height='349' style='border:0;' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+        "figcaption": "Imagen de empanadas"
     },
     {
         "title": "Ubicación",
-        "paragraph": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab.",
-        "image": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.3307860711257!2d-99.16888681157775!3d19.427023124965125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses-419!2smx!4v1693882209976!5m2!1ses-419!2smx' width='959' height='349' style='border:0;' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+        "paragraph": "Calle Principal, Villa Serenidad, Ciudad Esperanza, Estado del Sol, México.",
+        "image": "<iframe src='https://motor.elpais.com/wp-content/uploads/2022/01/google-maps-22-1046x616.jpg' width='959' height='349' style='border:0;' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
     }
 ]
