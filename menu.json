@@ -143,4 +143,28 @@
         "stock": 9,
         "category": "Bebidas"
     }
+     {
+        "image": "https://cdn2.cocinadelirante.com/sites/default/files/images/2019/04/como-hacer-agua-de-tamarindo-para-adelgazar.jpg",
+        "flavor": "Limonada",
+        "price": 25,
+        "description": "Nuestra limonada es una refrescante y deliciosa bebida que combina la frescura de los limones recién exprimidos con un toque de dulzura. Cada sorbo es una explosión de sabor cítrico y revitalizante que complementa a la perfección tus empanadas. Con su color amarillo claro y su aroma fresco, la limonada es la elección perfecta para refrescar tu paladar y equilibrar los sabores de nuestras empanadas. Ya sea que prefieras tu limonada tradicional o con un toque de menta, esta bebida es un acompañamiento refrescante y versátil que realza la experiencia culinaria. Es la opción ideal para aquellos que buscan una bebida clásica y refrescante para disfrutar con sus empanadas. ¡Eleva tu comida a otro nivel de frescura con nuestra limonada!",
+        "stock": 9,
+        "category": "Bebidas"
+    }
+     {
+        "image": "https://cdn2.cocinadelirante.com/sites/default/files/images/2019/04/como-hacer-agua-de-tamarindo-para-adelgazar.jpg",
+        "flavor": "Naranjada",
+        "price": 25,
+        "description": "Nuestra naranjada es una bebida refrescante que celebra la frescura y la vitalidad de las naranjas maduras. Cada sorbo es como un rayo de sol en un vaso, con el sabor jugoso y cítrico de las naranjas recién exprimidas. Su color dorado y su aroma a naranja fresca evocan la sensación de un día soleado. La naranjada es una elección refrescante y saludable que complementa a la perfección el sabor y la diversidad de nuestras empanadas. Ya sea que la prefieras con hielo o sin, esta bebida es el acompañamiento perfecto para realzar tus empanadas y llevar tu experiencia gastronómica al siguiente nivel. Es la opción ideal para aquellos que buscan un toque de frescura y vitalidad en su comida. ¡Deleita tus sentidos con la vivacidad de nuestra naranjada junto a tus empanadas favoritas!",
+        "stock": 9,
+        "category": "Bebidas"
+    }
+     {
+        "image": "https://cdn2.cocinadelirante.com/sites/default/files/images/2019/04/como-hacer-agua-de-tamarindo-para-adelgazar.jpg",
+        "flavor": "Piña colada",
+        "price": 25,
+        "description": "Nuestra Piña Colada es una indulgencia tropical que te transportará a las playas de ensueño con cada sorbo. Elaborada con piña fresca, crema de coco y un toque de ron (opcional), esta bebida es una explosión de sabor exótico y refrescante. Su color blanco cremoso y su aroma a piña fresca te sumergirán en un oasis de sabores tropicales. La Piña Colada es el complemento perfecto para equilibrar la variedad de sabores de nuestras empanadas. Ya sea que la prefieras con o sin alcohol, esta bebida es la elección ideal para quienes buscan una experiencia tropical y decadente junto a sus empanadas. Es el acompañamiento perfecto para una comida relajante y llena de sabor. ¡Embárcate en un viaje sensorial con nuestra Piña Colada y disfruta de un pedacito de paraíso junto a tus empanadas favoritas!",
+        "stock": 9,
+        "category": "Bebidas"
+    }
 ]
