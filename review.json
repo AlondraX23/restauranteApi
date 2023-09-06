@@ -1,38 +1,39 @@
 [
     {
         "image": "https://placehold.co/340x221",
-        "item": "Empanada 1",
+        "item": "Empanada de carne",
         "score": 4,
-        "review": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab."
+        "review": "La empanada de carne es realmente deliciosa. El relleno jugoso me hizo disfrutar cada bocado. Seguro la pediré de nuevo."
     },
     {
         "image": "https://placehold.co/340x221",
-        "item": "Empanada 2",
+        "item": "Empanada de pollo",
+        "score": 5,
+        "review": "La empanada de pollo es mi favorita. El pollo bien sazonado y la masa crujiente hacen una combinación perfecta."
+    },
+    {
+        "image": "https://placehold.co/340x221",
+        "item": "Empanada de queso",
+        "score": 5,
+        "review": "La empanada de queso es excepcional. El queso derretido en cada bocado y la masa dorada son simplemente irresistibles. Definitivamente la mejor que he probado."
+    },
+    {
+        "image": "https://placehold.co/340x221",
+        "item": "Limonada",
         "score": 4,
-        "review": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab."
+        "review": "La limonada es una elección refrescante para acompañar las empanadas. Su sabor cítrico y dulce complementa muy bien la comida. Siempre es una buena opción."
     },
     {
         "image": "https://placehold.co/340x221",
-        "item": "Empanada 3",
+        "item": "Piña Colada",
         "score": 5,
-        "review": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab."
+        "review": "La Piña Colada es mi favorita, su sabor tropical es inigualable. Combinada con las empanadas, es una experiencia deliciosa. No puedo resistirme a esta combinación."
     },
     {
         "image": "https://placehold.co/340x221",
-        "item": "Bebida 1",
-        "score": 4,
-        "review": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab."
-    },
-    {
-        "image": "https://placehold.co/340x221",
-        "item": "Bebida 2",
+        "item": "Salsa verde",
         "score": 5,
-        "review": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab."
-    },
-    {
-        "image": "https://placehold.co/340x221",
-        "item": "Salsa 2",
-        "score": 5,
-        "review": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt odit, mollitia eos iure quod itaque porro, dolorum ipsa aliquam, voluptas deleniti! Voluptatem aspernatur aut minus quo possimus, necessitatibus reprehenderit ab."
+        "review": "La salsa verde es el toque perfecto para las empanadas. Tiene un equilibrio de picante y frescura que realza el sabor. Siempre la pido."
     }
+]
 ]
