@@ -65,6 +65,15 @@
             },
             {
                 "flavor": "Tamarindo"
+            },
+            {
+            "flavor": "Limonada"
+            },
+            {
+                "flavor": "Naranjada"
+            },
+            {
+                "flavor": "Piña Colada"
             }
         ]
     }
