@@ -183,7 +183,8 @@ import { RouterLink, RouterView } from 'vue-router'
               <h5 class="h2">Card title</h5>
               <h5 class="h2 h2--neutro2">$<span>12 000</span></h5>
             </div>
-            <p class="p">Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+            <p class="p text-wrap">Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
+              dictum est a,
               mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus... </p>
             <div class="hstack gap-3 pt-5">
               <div class="ps-0 p-2">
@@ -221,6 +222,45 @@ import { RouterLink, RouterView } from 'vue-router'
       </div>
     </div>
 
+    <!-- Factura -->
+    <div class="card__bill">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="h3" scope="col">Concepto</th>
+            <th class="h3" scope="col">Costo</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <td class="h3">Item 1</td>
+            <td class="h3">$ <span>200</span></td>
+          </tr>
+        <tfoot>
+          <tr>
+            <th class="h2">TOTAL</th>
+            <th class="h2">$ <span>350</span></th>
+          </tr>
+        </tfoot>
+
+        </tbody>
+      </table>
+    </div>
+
+    <!-- input -->
+    <div class="mb-3">
+      <input type="email" class="input__desk" id="exampleInputEmail1" placeholder="Ejemplo o instrucciones"
+        aria-describedby="emailHelp">
+    </div>
+
+    <!-- Select -->
+    <select  aria-label="Default select example">
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+
     <!-- Contador -->
     <div class="contador">
       <button class="btn__contador"><svg width="16" height="3" viewBox="0 0 16 3" fill="none"
@@ -240,19 +280,19 @@ import { RouterLink, RouterView } from 'vue-router'
 
     <!-- Paquetes -->
     <div class="card__package">
-      <div class="card-body">
+      <div class="card-content">
         <span>1</span>
-        <h5 class="h3">Card title</h5>
+        <h5 class="h3">Paquete mediano</h5>
         <h6 class="p text-body-secondary">CLibero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu
           ad litora torquent per conubia nostra, per inceptos himenaeos. </h6>
         <ul>
-          <li>Sorem ipsum dolor sit amet, consectetur </li>
-          <li>Nunc vulputate libero et velit</li>
-          <li>Aac aliquet odio mattis adipiscing elit </li>
-          <li>Class aptent taciti sociosqu ad torquent</li>
+          <li class="p">Sorem ipsum dolor sit amet, consectetur </li>
+          <li class="p">Nunc vulputate libero et velit</li>
+          <li class="p">Aac aliquet odio mattis adipiscing elit </li>
+          <li class="p">Class aptent taciti sociosqu ad torquent</li>
         </ul>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+        <a href="#">Card link</a>
+
       </div>
     </div>
 
@@ -401,6 +441,25 @@ import { RouterLink, RouterView } from 'vue-router'
 .p--white {
   color: var(--neutro-3);
 }
+
+/* Input */
+.input__desk {
+  border: 1px solid #425466;
+  border-bottom: 3px solid #425466;
+  border-radius: 6px;
+  height: 40px;
+
+
+}
+
+/* Select */
+select {
+  border: 2px solid #425466;
+  border-radius: 6px;
+  height: 40px;
+  background-color: var(--neutro-3);
+}
+
 
 /* Botones */
 .btn__desk {
@@ -591,8 +650,7 @@ import { RouterLink, RouterView } from 'vue-router'
   border: #d39b5a;
 }
 
-/* --- */
-
+/* CARDS */
 .card__review {
   width: min-content;
   height: min-content;
@@ -630,8 +688,8 @@ import { RouterLink, RouterView } from 'vue-router'
   background: var(--neutro-3, #F8F8F8);
   box-shadow: 1px 6px 16px 0px rgba(66, 84, 102, 0.30);
 
-  .card-body {
-    padding: 16px 32px 16px 32px;
+  .card-content {
+    padding: 48px;
   }
 
   span {
@@ -657,18 +715,51 @@ import { RouterLink, RouterView } from 'vue-router'
     padding-bottom: 16px;
   }
 
-  ul {
-    list-style-image: url("src/assets/img/check point.svg");
-    background-size: 10px 10px;
-    /* Set the desired size */
-    /* padding-left: 30px; */
-
+  h6 {
+    margin: 0;
+    padding-bottom: 48px;
   }
 
+  ul {
+    list-style-image: url('src/assets/img/check point.svg');
+    list-style-position: inside;
+    padding: 0;
+    padding-bottom: 8px;
+
+    li {
+      margin: 0;
+      margin-bottom: 24px;
+
+    }
+  }
+
+  a {
+    color: var(--neutro-1, #16192C);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: underline;
+    text-align: center;
+  }
+}
+
+.card__bill {
+  width: 100%;
+  height: min-content;
+  border: 16;
+  border-radius: 16px;
+  padding: 30px 95px 30px 95px;
+  background: var(--neutro-3, #F8F8F8);
+  box-shadow: 1px 6px 16px 0px rgba(66, 84, 102, 0.30);
+
+  .h3 {
+    color: #425466;
+  }
 }
 
 .card__menu {
-  width: fit-content;
+  width: 100%;
   height: min-content;
   border: 0;
   border-radius: 16px;
@@ -703,7 +794,7 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 .card__cart {
-  width: fit-content;
+  width: 100%;
   height: min-content;
   border: 0;
   border-radius: 16px;
