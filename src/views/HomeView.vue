@@ -1,6 +1,107 @@
 <script setup>
+import { RouterLink, RouterView } from 'vue-router';
+import Carousel from '@/components/Carousel.vue';
+import Review from '@/components/Review.vue';
+
 </script>
 
-<template>
+<template class="bg-blanco">
+    <main class="main__desk">
+        <div id="section0">
+            <Carousel />
+        </div>
+        <div class="row" id="section1">
+            <div class="col-7">
+                <h1 class="h1">Sobre Nosotros </h1> <!-- {{  }} -->
+                <p class="p">Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut
+                    vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat
+                    ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus, porttitor eu mauris a, blandit
+                    ultrices nibh. Mauris sit amet magna non ligula vestibulum eleifend. Nulla varius volutpat turpis sed
+                    lacinia. Nam eget mi in purus lobortis eleifend. Sed nec ante dictum sem condimentum ullamcorper quis
+                    venenatis nisi.</p>
+                <p class="p">Nam pulvinar blandit velit, id condimentum diam faucibus at. Aliquam lacus nisi, sollicitudin
+                    at nisi
+                    nec, fermentum congue felis. Quisque mauris dolor, fringilla sed tincidunt ac, finibus non odio. Sed
+                    vitae mauris nec ante pretium finibus. </p>
+            </div>
+            <div class="col-5">
+                <figure>
+                    <img src="https://placehold.co/471x349" alt="">
+                    <figcaption class="p">Foto 1: descripción de la imagen</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div id="section2">
+            <h1 class="h1">Reseñas</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-3">
+                <div class="col">
+                    <Review />
+                </div>
+                <div class="col">
+                    <Review />
+                </div>
+                <div class="col">
+                    <Review />
+                </div>
 
+            </div>
+
+        </div>
+        <div class="row" id="section3">
+            <div class="col-10 mx-auto">
+                <h1 class="h1">Ubicación</h1> <!-- {{  }} -->
+                <p class="p">Norem ipsum dolor sit amet, consectetur adipiscing elit. Mountainview RdGreenwood Lake, New
+                    York(NY), 10925.
+                    Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora
+                    torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum
+                    lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.
+                </p>
+                <figure>
+                    <img src="https://placehold.co/959x349" alt="">
+                    <figcaption class="p">Foto 1: descripción de la imagen</figcaption>
+                </figure>
+            </div>
+
+        </div>
+
+    </main>
 </template>
+
+<style>
+main img {
+    border-radius: 6px;
+    width: 100%;
+}
+
+#section0 {
+    padding-bottom: 96px;
+
+}
+
+#section1 {
+    padding-bottom: 48px;
+
+    .h1 {
+        margin: 0;
+        margin-bottom: 32px;
+    }
+}
+
+#section2 {
+    padding-bottom: 96px;
+
+    h1 {
+        margin: 0;
+        margin-bottom: 32px;
+    }
+}
+
+#section3 {
+    padding-bottom: 48px;
+
+    h1 {
+        margin: 0;
+        margin-bottom: 32px;
+    }
+}
+</style>
