@@ -5,3 +5,18 @@
             fill="#16192C" />
     </svg>
 </template>
+
+<script>
+  export default {
+    name: 'AgregarIcon',
+    props: {
+      size: {
+        type: Number,
+        default: 30
+      },
+      color: {
+        type: String,
+        default: '##F8F8F8'
+      },
+    }
+  }</script>

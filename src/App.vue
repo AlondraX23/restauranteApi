@@ -8,7 +8,7 @@ import Navbar from './components/Navbar.vue';
   <Navbar />
 
   <main class="main__desk">
-    <button class="btn__desk me-2">
+    <!-- <button class="btn__desk me-2">
       <p class="p p--white">ejemplo</p>
     </button>
 
@@ -18,10 +18,10 @@ import Navbar from './components/Navbar.vue';
 
     <button class="btn__desk btn__desk-no me-2">
       <p class="p p--white">ejemplo</p>
-    </button>
+    </button> -->
 
-    <!-- Arreglar alineación del texto -->
-    <button class="btn__desk btn__desk--outline me-2">
+    <!-- Outline -->
+    <!-- <button class="btn__desk btn__desk--outline me-2">
       <p class="p">ejemplo</p>
     </button>
 
@@ -31,10 +31,10 @@ import Navbar from './components/Navbar.vue';
 
     <button class="btn__desk btn__desk--outline-no me-2">
       <p class="p">ejemplo</p>
-    </button>
+    </button> -->
 
     <!-- Botones con icon -->
-    <button class="btn__desk--edit me-2">
+    <!-- <button class="btn__desk--edit me-2">
       <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
           d="M22.4142 1.41421C21.6332 0.633165 20.3668 0.633166 19.5858 1.41421L18.6422 2.3578L22.6422 6.3578L23.5858 5.41421C24.3668 4.63316 24.3668 3.36684 23.5858 2.58579L22.4142 1.41421ZM17.8563 3.14374L21.8563 7.14374L6.13769 22.8624L2.13769 18.8624L17.8563 3.14374ZM5.35175 23.6483L1.35175 19.6483L0.708334 23.7198C0.655334 24.0552 0.944875 24.3448 1.28025 24.2918L5.35175 23.6483Z"
@@ -92,69 +92,23 @@ import Navbar from './components/Navbar.vue';
         <p class="p">Pagar</p>
       </button>
       <p class="h3">8</p>
-    </div>
-
-    <!-- label -->
-    <div class="label__price m-2">
-      <button>$</button>
-      <p class="h3">899999</p>
-    </div>
-
-    <!-- Factura -->
-    <div class="card__bill">
-      <table class="table">
-        <thead>
-          <tr>
-            <th class="h3" scope="col">Concepto</th>
-            <th class="h3" scope="col">Costo</th>
-          </tr>
-        </thead>
-        <tbody class="table-group-divider">
-          <tr>
-            <td class="h3">Item 1</td>
-            <td class="h3">$ <span>200</span></td>
-          </tr>
-        <tfoot>
-          <tr>
-            <th class="h2">TOTAL</th>
-            <th class="h2">$ <span>350</span></th>
-          </tr>
-        </tfoot>
-
-        </tbody>
-      </table>
-    </div>
+    </div> -->
 
     <!-- input -->
-    <div class="mb-3">
+    <!-- <div class="mb-3">
       <input type="email" class="input__desk" id="exampleInputEmail1" placeholder="Ejemplo o instrucciones"
         aria-describedby="emailHelp">
-    </div>
+    </div> -->
 
     <!-- Select -->
-    <select aria-label="Default select example">
+    <!-- <select aria-label="Default select example">
       <option selected>Open this select menu</option>
       <option value="1">One</option>
       <option value="2">Two</option>
       <option value="3">Three</option>
-    </select>
+    </select> -->
 
-    <!-- Contador -->
-    <div class="contador">
-      <button class="btn__contador"><svg width="16" height="3" viewBox="0 0 16 3" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M0 1.10345C0 0.494031 0.370523 0 0.827586 0H15.1724C15.6295 0 16 0.494031 16 1.10345C16 1.71287 15.6295 2.2069 15.1724 2.2069H0.827586C0.370523 2.2069 0 1.71287 0 1.10345Z"
-            fill="#F8F8F8" />
-        </svg></button>
-      <p class="h3">8</p>
-      <button class="btn__contador--reflection" dir=""><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M6.93333 14.9333C6.93333 15.5224 7.4109 16 8 16C8.5891 16 9.06667 15.5224 9.06667 14.9333V9.06667H14.9333C15.5224 9.06667 16 8.5891 16 8C16 7.4109 15.5224 6.93333 14.9333 6.93333H9.06667V1.06667C9.06667 0.477562 8.5891 0 8 0C7.4109 0 6.93333 0.477562 6.93333 1.06667V6.93333H1.06667C0.477563 6.93333 0 7.4109 0 8C0 8.5891 0.477563 9.06667 1.06667 9.06667H6.93333V14.9333Z"
-            fill="#F8F8F8" />
-        </svg></button>
-    </div>
+
 
 
 
@@ -162,7 +116,7 @@ import Navbar from './components/Navbar.vue';
 
   </main>
 
-  <RouterView />
+  <!-- <RouterView /> -->
 </template>
 
 <style>
@@ -268,6 +222,8 @@ select {
   border-radius: 6px;
   height: 40px;
   background-color: var(--neutro-3);
+  width: auto;
+  
 }
 
 /* Botones */
@@ -459,23 +415,6 @@ select {
   border: #d39b5a;
 }
 
-/* CARDS */
-
-.card__bill {
-  width: 100%;
-  height: min-content;
-  border: 16;
-  border-radius: 16px;
-  padding: 30px 95px 30px 95px;
-  background: var(--neutro-3, #F8F8F8);
-  box-shadow: 1px 6px 16px 0px rgba(66, 84, 102, 0.30);
-
-  .h3 {
-    color: #425466;
-  }
-}
-
-
 /* add padding in h3 */
 .btn__pay {
   display: flex;
@@ -515,93 +454,7 @@ select {
 
 }
 
-.label__price {
-  display: flex;
 
-  button {
-    padding: 7px 14px;
-    border-radius: 6px 0px 0px 6px;
-    height: 40px;
-    background-color: var(--neutro-2);
-    color: var(--neutro-3);
-    border: none;
-    cursor: pointer;
-    font-family: 'Inter', sans-serif;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-  }
 
-  .h3 {
-    width: auto;
-    height: 40px;
-    padding: 7px 14px;
-    border-radius: 0px 6px 6px 0px;
-    border: 3px solid var(--neutro-2);
-    border-left: 0px;
-    text-align: center;
-    padding-top: 4px;
-  }
-}
-
-.contador {
-  display: flex;
-  gap: 4px;
-
-  .btn__contador {
-    border-radius: 6px 0px 0px 6px;
-    width: 35.188px;
-    height: 34.286px;
-    background-color: var(--neutro-2);
-    color: var(--neutro-3);
-    border: none;
-    cursor: pointer;
-    margin-top: 2.5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .btn__contador:hover {
-    background-color: var(--neutro-1);
-    color: var(--neutro-3);
-
-  }
-
-  .h3 {
-    width: 46px;
-    height: 40px;
-    border-radius: 6px;
-    border: 3px solid var(--neutro-2, #425466);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .btn__contador--reflection {
-    border-radius: 0px 6px 6px 0px;
-    width: 35.188px;
-    height: 34.286px;
-    background-color: var(--neutro-2);
-    color: var(--neutro-3);
-    border: none;
-    cursor: pointer;
-    margin-top: 2.5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .btn__contador--reflection:hover {
-    background-color: var(--neutro-1);
-    color: var(--neutro-3);
-  }
-
-}
 </style>
