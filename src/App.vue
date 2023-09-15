@@ -1,6 +1,8 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router';
 import Navbar from './components/Navbar.vue';
+import CarritoIcon from './components/icons/IconCarrito.vue'
+
 
 </script>
 
@@ -63,12 +65,7 @@ import Navbar from './components/Navbar.vue';
     </button>
 
     <button class="btn__desk btn__desk--icon me-2">
-      <svg class="icon" width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M7.85714 16.5C11.7021 16.5 13.1216 15.8936 13.4757 15.7009C13.5391 15.6664 13.5785 15.6033 13.5913 15.5322L15.5391 4.67994C15.5555 4.58851 15.4827 4.50583 15.39 4.51168C14.5402 4.56536 10.8681 4.78571 7.85714 4.78571C4.84616 4.78571 1.17412 4.56536 0.324296 4.51168C0.23159 4.50583 0.158743 4.58851 0.175153 4.67994L2.123 15.5322C2.13576 15.6033 2.17516 15.6664 2.23862 15.7009C2.59268 15.8936 4.01219 16.5 7.85714 16.5Z" />
-        <path
-          d="M7.28571 0.5H8.42857C8.74416 0.5 9 0.755837 9 1.07143V1.37217C10.9351 1.42222 12.6574 1.58793 13.8076 1.7256C14.7129 1.83396 15.4453 2.48727 15.6958 3.36399C15.7787 3.65403 15.5728 3.94593 15.2716 3.96299C13.9301 4.03896 10.543 4.21429 7.85714 4.21429C5.17133 4.21429 1.78419 4.03896 0.442682 3.96299C0.141511 3.94593 -0.0644185 3.65403 0.018452 3.36399C0.268943 2.48727 1.00136 1.83396 1.9067 1.7256C3.0569 1.58793 4.77917 1.41471 6.71429 1.36466V1.07143C6.71429 0.755837 6.97012 0.5 7.28571 0.5Z" />
-      </svg>
+      <CarritoIcon style="width: 20px; height: 20x;"/>
       <p class="p">ejemplo</p>
     </button>
 
@@ -142,7 +139,6 @@ import Navbar from './components/Navbar.vue';
 
 @media (min-width: 1024px) {
   .main__desk {
-    min-height: 100vh;
     margin-left: 144px;
     margin-right: 144px;
     margin-top: 48px;
