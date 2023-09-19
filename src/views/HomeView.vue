@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router';
 import Carousel from '@/components/Carousel.vue';
 import Review from '@/components/Review.vue';
+import Reviews from '../data/review.json'
 
 </script>
 
@@ -25,25 +26,21 @@ import Review from '@/components/Review.vue';
                     vitae mauris nec ante pretium finibus. </p>
             </div>
             <div class="col-5">
+                
                 <figure>
-                    <img src="https://placehold.co/471x349" alt="">
-                    <figcaption class="p">Foto 1: descripción de la imagen</figcaption>
+                    <img src="https://editorialtelevisa.brightspotcdn.com/wp-content/uploads/2021/02/mini-empanadas-argentinas.jpg" alt="Imagen de empanadas">
+                    <figcaption class="p">En el corazón de México, nació la idea de compartir la auténtica delicia de las empanadas con el mundo. En [Nombre de la Empresa], nuestra historia comienza con una familia apasionada por la cocina mexicana y un deseo profundo de preservar las tradiciones culinarias que han perdurado por generaciones.</figcaption>
                 </figure>
             </div>
         </div>
         <div id="section2">
             <h1 class="h1">Reseñas</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div v-for="review in Reviews" :key="review.id">
                 <div class="col">
-                    <Review />
+                    <Review :review="review"/>
                 </div>
-                <div class="col">
-                    <Review />
-                </div>
-                <div class="col">
-                    <Review />
-                </div>
-
+            </div>
             </div>
 
         </div>
@@ -57,8 +54,8 @@ import Review from '@/components/Review.vue';
                     lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.
                 </p>
                 <figure>
-                    <img src="https://placehold.co/959x349" alt="">
-                    <figcaption class="p">Foto 1: descripción de la imagen</figcaption>
+                    <img src="https://motor.elpais.com/wp-content/uploads/2022/01/google-maps-22-1046x616.jpg" alt="Ubicación">
+                    <figcaption class="p">Calle Principal, Villa Serenidad, Ciudad Esperanza, Estado del Sol, México.</figcaption>
                 </figure>
             </div>
 
