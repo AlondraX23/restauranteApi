@@ -48,3 +48,4 @@ import Progreso from '@/components/Progreso.vue';
 
 
 </template>
+

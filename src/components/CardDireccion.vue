@@ -9,6 +9,7 @@ import CalendarioIcon from '@/components/icons/IconCalendario.vue'
     <!-- Agregar {{  }} -->
     <div class="card__menu">
         <div class="container-fluid text-center p-0">
+            <slot></slot>
             <div class="row row-cols-sm-7 g-2 g-lg-2">
                 <div class="col-3">
                     <div class="mb-2">
