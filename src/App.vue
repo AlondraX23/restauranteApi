@@ -132,6 +132,10 @@ import CarritoIcon from './components/icons/IconCarrito.vue'
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 /* ---- */
 
+/* * {
+  background-color: var(--neutro-3);
+
+} */
 
 .bg-blanco {
   background-color: var(--neutro-3);
@@ -208,6 +212,7 @@ import CarritoIcon from './components/icons/IconCarrito.vue'
   border-bottom: 3px solid #425466;
   border-radius: 6px;
   height: 40px;
+  width: 100%;
 
 
 }
@@ -219,7 +224,7 @@ select {
   height: 40px;
   background-color: var(--neutro-3);
   width: auto;
-  
+
 }
 
 /* Botones */
@@ -227,6 +232,7 @@ select {
   padding: 7px 14px;
   border-radius: 6px;
   height: 40px;
+  width: auto;
   background-color: var(--secundario);
   color: var(--neutro-3);
   border: none;
@@ -449,8 +455,4 @@ select {
   }
 
 }
-
-
-
-
 </style>

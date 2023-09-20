@@ -1,8 +1,11 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router';
+// import { Ref, triggerRef } from 'vue';
 import Paquete from '@/components/Paquete.vue';
 import Factura from '@/components/Factura.vue';
 import CardProductos from '@/components/CardProductos.vue';
+import CardDireccion from '@/components/CardDireccion.vue';
+import SobreIcon from '@/components/icons/IconSobre.vue';
 
 </script>
 
@@ -37,10 +40,48 @@ import CardProductos from '@/components/CardProductos.vue';
         </div>
         <div class="col-10 mx-auto pb-5">
             <h2 class="h3">Dirección y fecha</h2>
-            
+            <CardDireccion />
         </div>
         <div id="factura">
             <Factura></Factura>
+        </div>
+        <div id="final-btn" class="d-flex gap-3 justify-content-center mx-auto pt-4">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn__desk btn__desk--icon" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <SobreIcon />
+                <p class="p">Enviar</p>
+            </button>
+            <RouterLink to="/compra" class="link-underline link-underline-opacity-0">
+                <button class="btn__desk btn__desk-ok me-2">
+                    <p class="p p--white">Hacer pedido</p>
+                </button>
+
+            </RouterLink>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 h3" id="exampleModalLabel">¿Es correcto el siguiente correo electrónico?
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <RouterLink to="/perfil">
+                            <button type="button" class="btn__desk btn__desk--outline-no" data-bs-dismiss="modal">
+                                <p class="p">No, editar</p>
+                            </button>
+                        </RouterLink>
+                        <button type="button" class="btn__desk btn__desk-ok">
+                            <p class="p p--white">Sí, es correcto</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -48,6 +89,29 @@ import CardProductos from '@/components/CardProductos.vue';
 </template>
 
 <style>
+.modal {
+    .modal-content {
+        border: 0;
+        padding: 32px;
+    }
+
+    .modal-dialog {
+        background-color: var(--neutro-3);
+        border-radius: 16px;
+    }
+
+    .modal-header {
+        padding: 0px 0px 16px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .modal-footer {
+        padding: 16px 0px 0px 0px;
+    }
+}
+
 #descripcion-general {
     margin-bottom: 90px;
 
@@ -86,5 +150,23 @@ import CardProductos from '@/components/CardProductos.vue';
         padding-bottom: 32px;
         text-align: center;
     }
+}
+
+.color_icon {
+    fill: var(--neutro-3);
+}
+
+.final-btn {
+    button {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            margin: 0;
+        }
+    }
+
 }
 </style>
