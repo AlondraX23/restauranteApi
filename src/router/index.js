@@ -28,6 +28,16 @@ const router = createRouter({
       path: '/platillo',
       name: 'platillo',
       component: () => import('../views/PlatilloView.vue')
+    },
+    {
+      path: '/compra',
+      name: 'compra',
+      component: () => import('../views/CompraView.vue')
+    },
+    {
+      path: '/perfil',
+      name: 'perfil',
+      component: () => import('../views/PerfilView.vue')
     }
     // {
     //   path: '/menu/:platillo',
