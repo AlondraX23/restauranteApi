@@ -132,6 +132,10 @@ import CarritoIcon from './components/icons/IconCarrito.vue'
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 /* ---- */
 
+/* * {
+  background-color: var(--neutro-3);
+
+} */
 
 .bg-blanco {
   background-color: var(--neutro-3);
