@@ -22,26 +22,54 @@ import Progreso from '@/components/Progreso.vue';
             <Progreso />
 
         </div>
-        <div id="accordion">
-            <div class="card" id="dirección">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Componente de dirección
-                </button>
+        <div class="accordion" id="accordionPayment">
+            <div class="accordion-item" id="dirección">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-tog-gle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Dirección
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionPayment">
+                    <div class="accordion-body">
+                        Componente de dirección
+                    </div>
+                </div>
             </div>
-            <div class="card" id="pago">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Componente de pago
-                </button>
+            <div class="accordion-item" id="pago">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Pago
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionPayment">
+                    <div class="accordion-body">
+                        Componente de pago
+                    </div>
+                </div>
             </div>
-            <div class="card" id="elaboración">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Componente de elaboración
-                </button>
+            <div class="accordion-item" id="elaboración">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Elaboración
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionPayment">
+                    <div class="accordion-body">
+                        Componente de elaboración
+                    </div>
+                </div>
             </div>
-            <div class="card" id="envío">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Componente de envío
-                </button>
+            <div class="accordion-item" id="envío">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Envío
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionPayment">
+                    <div class="accordion-body">
+                        Componente de envío
+                    </div>
+                </div>
             </div>
         </div>
     </main>
