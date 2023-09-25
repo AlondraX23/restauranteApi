@@ -5,7 +5,7 @@ import { ref, onMounted } from 'vue';
 const caroussel = ref([]);
 
 const fetchDataFromApi = () => {
-  fetch('./src/data/carousel.json')
+  fetch('https://raw.githubusercontent.com/AlondraX23/restauranteApi/API/carousel.json')
     .then(response => response.json())
     .then(data => {
       caroussel.value = data;

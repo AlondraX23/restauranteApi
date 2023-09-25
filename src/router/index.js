@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import('../views/MenuView.vue')
     },
     {
+      path: '/menu//:nombre',
+      name: 'platillo',
+      component: () => import('../views/PlatilloView.vue')
+    },
+    {
       path: '/eventos',
       name: 'eventos',
       component: () => import('../views/EventosView.vue')
@@ -23,11 +28,6 @@ const router = createRouter({
       path: '/carrito',
       name: 'carrito',
       component: () => import('../views/CarritoView.vue')
-    },
-    {
-      path: '/platillo',
-      name: 'platillo',
-      component: () => import('../views/PlatilloView.vue')
     },
     {
       path: '/compra',
@@ -39,11 +39,6 @@ const router = createRouter({
       name: 'perfil',
       component: () => import('../views/PerfilView.vue')
     }
-    // {
-    //   path: '/menu/:platillo',
-    //   name: 'platillo',
-    //   component: () => import('../views/PlatilloView.vue'),
-    // }
   ]
 })
 

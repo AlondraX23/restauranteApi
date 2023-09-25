@@ -9,17 +9,16 @@ import { RouterLink, RouterView } from "vue-router";
         <img src="../assets/img/paquete3.jpg" class="card-img"
           alt="La experiencia completa de nuestro variado menú en un solo paquete." />
       </div>
-      <div class="col-sm-9">
-        <div class="card-body">
+      <div class="col-sm-9 align-self-center px-4">
+        <div class="vstack  " >
           <div class="d-flex justify-content-between" id="title-cost">
             <h5 class="h2">Paquete 3</h5>
             <h5 class="h2 h2--neutro2">$<span>3899</span></h5>
           </div>
-          <p class="p text-wrap">
+          <p class="p text-wrap ">
             La experiencia completa de nuestro variado menú en un solo paquete.
           </p>
-          <div class="row pt-4">
-
+          <div class="row pt-4 bg-transparent">
             <div class="col-lg-6 col-sm-12">
               <div class="ps-0 pb-1">
                 <div class="contador flex">
@@ -82,7 +81,6 @@ import { RouterLink, RouterView } from "vue-router";
   display: flex;
   justify-content: center;
   align-items: center;
-  color: whtie;
 }
 
 .card__cart {
@@ -95,7 +93,7 @@ import { RouterLink, RouterView } from "vue-router";
   background: var(--neutro-3, #f8f8f8);
   box-shadow: 1px 6px 16px 0px rgba(66, 84, 102, 0.3);
 
-  .card-body {
+  /* .card-body {
     padding: 0px 32px 0px 16px;
 
     .h2 {
@@ -107,7 +105,7 @@ import { RouterLink, RouterView } from "vue-router";
       padding: 0;
       margin: 0px;
     }
-  }
+  } */
 }
 
 .contador {

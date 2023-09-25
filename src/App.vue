@@ -9,7 +9,7 @@ import CarritoIcon from './components/icons/IconCarrito.vue'
 <template class="bg-blanco">
   <Navbar />
 
-  <main class="main__desk">
+  <main class="main__desk bg-blanco">
     <!-- <button class="btn__desk me-2">
       <p class="p p--white">ejemplo</p>
     </button>
@@ -117,9 +117,9 @@ import CarritoIcon from './components/icons/IconCarrito.vue'
 </template>
 
 <style>
-* {
+/* * {
   background-color: var(--neutro-3);
-}
+} */
 
 :root {
   --primario: #E96345;
