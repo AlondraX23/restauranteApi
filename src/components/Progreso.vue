@@ -39,6 +39,7 @@ button {
 
     .color_icon {
         fill: var(--neutro-2);
+        background-color: transparent;
     }
 }
 
@@ -47,6 +48,7 @@ button:hover {
 
     .color_icon {
         fill: var(--neutro-3);
+        background-color: transparent;
     }
 }
 

@@ -154,6 +154,7 @@ import SobreIcon from '@/components/icons/IconSobre.vue';
 
 .color_icon {
     fill: var(--neutro-3);
+    background-color: transparent;
 }
 
 .final-btn {

@@ -73,6 +73,7 @@ onMounted(() => {
 
 .color_icon {
   fill: var(--neutro-3);
+  background-color: transparent;
 }
   .carousel-inner img {
     border-radius: 18px;

@@ -32,6 +32,7 @@ import Tarjeta from '../components/Tarjeta.vue';
 <style scoped>
 .color_icon {
     fill: var(--neutro-3);
+    background-color: transparent;
 }
 
 button {

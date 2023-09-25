@@ -2,15 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import CarritoIcon from './icons/IconCarrito.vue'
 
-// function toggleNavbar() {
-//     const navbarCollapse = document.querySelector('.navbar-collapse');
-//     navbarCollapse.classList.toggle('show');
-//   }
 
-//   function closeNavbar() {
-//     const navbarCollapse = document.querySelector('.navbar-collapse');
-//     navbarCollapse.classList.remove('show');
-//   }
 </script>
 
 <template>
@@ -29,35 +21,36 @@ import CarritoIcon from './icons/IconCarrito.vue'
       </div>
     </div>
   </nav> -->
-  <!-- <nav class="navbar navbar-expand-lg bg-primario" style="height: 64px; vertical-align: middle;">
+  <nav class="navbar navbar-expand-lg bg-primario" style="height: 64px; vertical-align: middle;">
     <div class="container-fluid mx-2 bg-primario">
       <RouterLink to="/" class="nb-brand bg-primario">
         <img src="src/assets/logo.svg" alt="" class="bg-primario">
         Empanadas
       </RouterLink>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNavbar()">
-        <span class="navbar-toggler-icon"></span>
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-primario"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse bg-primario justify-content-end" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <RouterLink to="/menu" class="h1__nav px-2 bg-primario" onclick="closeNavbar()">Menú</RouterLink>
+          <li class="nav-item bg-primario">
+            <RouterLink to="/menu" class="h1__nav px-2 bg-primario">Menú</RouterLink>
           </li>
-          <li class="nav-item">
-            <RouterLink to="/eventos" class="h1__nav px-2 bg-primario" onclick="closeNavbar()">Eventos</RouterLink>
+          <li class="nav-item bg-primario">
+            <RouterLink to="/eventos" class="h1__nav px-2 bg-primario">Eventos</RouterLink>
           </li>
-          <li class="nav-item">
-            <RouterLink to="/carrito" class="ps-2 bg-primario" onclick="closeNavbar()">
-              <CarritoIcon />
+          <li class="nav-item bg-primario" id="icon_carrito">
+            <RouterLink to="/carrito" class="ps-2 bg-primario">
+              <CarritoIcon class="bg-primario" />
             </RouterLink>
           </li>
         </ul>
       </div>
     </div>
-  </nav> -->
+  </nav>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+  <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -81,11 +74,16 @@ import CarritoIcon from './icons/IconCarrito.vue'
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
   <RouterView />
 </template>
 
 <style>
+  @media (max-width: 991.98px) {
+    #icon_carrito {
+      padding: 8px 0px 10px 0px;
+    }
+  }
 .nb-brand {
   color: var(--neutro-3);
   font-family: 'Inter', sans-serif;
