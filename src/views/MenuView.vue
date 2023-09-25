@@ -7,16 +7,8 @@ import Menu from '@/components/Menu.vue';
 
 <template class="bg-blanco">
     <main class="main__desk">
-        <div id="tipo1"> <!-- v-for -->
-            <h1 class="h1"> Tipo 1 </h1>
-            <Menu></Menu>
-        </div>
-        <div id="tipo1"> <!-- v-for -->
-            <h1 class="h1"> Tipo 2 </h1>
-            <Menu></Menu>
-        </div>
-        <div id="tipo2"> <!-- v-for -->
-            <h1 class="h1"> Tipo 3 </h1>
+        <div id="menu"> <!-- v-for -->
+            <h1 class="h1"> Menú </h1>
             <Menu></Menu>
         </div>
     </main>

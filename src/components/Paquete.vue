@@ -1,35 +1,38 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import ViñetaIcon from './icons/IconViñeta.vue'
+import paquetes from '../data/packages.json'
 
 
 </script>
 
 <template>
-    <!-- Agregar {{  }} , editar las viñetas-->
-    <div class="card__package">
-        <div class="card-content">
-            <span>1</span>
-            <h5 class="h3">Paquete mediano</h5>
-            <h6 class="p text-body-secondary">CLibero et velit interdum, ac aliquet odio mattis. Class aptent taciti
-                sociosqu
-                ad litora torquent per conubia nostra, per inceptos himenaeos. </h6>
-            <ul>
-                <li class="p">Sorem ipsum dolor sit amet, consectetur </li>
-                <li class="p">Nunc vulputate libero et velit</li>
-                <li class="p">Aac aliquet odio mattis adipiscing elit </li>
-                <li class="p">Class aptent taciti sociosqu ad torquent</li>
+    <div class="container">
+      <div v-for="paquete in paquetes" :key="paquete.id">
+        <div class="card__package">
+          <div class="card-content">
+            <h5 class="h3">{{ paquete.title }}</h5>
+            <h6 class="p text-body-secondary">{{ paquete.description }}</h6>
+            <ul v-for="(item, index) in paquete.bulletPoints" :key="index">
+              <li class="p">{{ item.point }}</li>
             </ul>
-            <a href="#">Card link</a>
-
+          </div>
         </div>
+      </div>
     </div>
     <RouterView />
-</template>
+  </template>
 
 <style>
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
 .card__package {
-    width: 465px;
+    width: 400px;
     height: min-content;
     border: 0;
     border-radius: 16px;
@@ -89,6 +92,9 @@ import ViñetaIcon from './icons/IconViñeta.vue'
         font-weight: 600;
         text-decoration: underline;
         text-align: center;
+    }
+    .card_paquete {
+        margin-bottom: 20px;
     }
 }
 </style>

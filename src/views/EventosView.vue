@@ -20,17 +20,9 @@ import SobreIcon from '@/components/icons/IconSobre.vue';
                 scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel
                 bibendum lorem.Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>
         </div>
-        <div class="container">
-            <div class="card_paquete">
-                <Paquete />
-            </div>
-            <div class="card_paquete-enfrente">
-                <Paquete />
-            </div>
-            <div class="card_paquete">
-                <Paquete />
-            </div>
-        </div>
+        
+        <Paquete />
+        
         <div id="descripcion-especifica">
             <h2 class="h2--medium">Paquete mediano</h2>
             <p class="p">Morem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
@@ -129,12 +121,7 @@ import SobreIcon from '@/components/icons/IconSobre.vue';
     }
 }
 
-.container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-
-    .card_paquete {
+.card_paquete {
         margin-bottom: 20px;
     }
 
@@ -150,11 +137,9 @@ import SobreIcon from '@/components/icons/IconSobre.vue';
         top: 0;
         left: 0;
         margin-left: 25%;
-        /* Adjust the negative margin to your desired spacing */
         z-index: 1;
         transform: scale(1.1);
     }
-}
 
 #descripcion-especifica {
     padding-top: 100px;

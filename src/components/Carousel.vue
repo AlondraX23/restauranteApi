@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-
+import caroussel from '../data/carousel.json';
 
 </script>
 
@@ -15,14 +15,8 @@ import { RouterLink, RouterView } from 'vue-router'
                 aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://placehold.co/1152x600" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="https://placehold.co/1152x600" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="https://placehold.co/1152x600" class="d-block w-100" alt="...">
+            <div class="carousel-item active"  v-for="element in caroussel" :key="element.id">
+                <img :src="element.image" class="d-block w-100" :alt="element.figcaption">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -62,6 +56,9 @@ import { RouterLink, RouterView } from 'vue-router'
 
     .carousel-inner img {
         border-radius: 18px;
+        width: 100%;
+        max-height: 480px;
+        object-fit: cover;
     }
 }
 </style>
