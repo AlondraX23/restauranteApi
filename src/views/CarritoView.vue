@@ -3,7 +3,6 @@ import { RouterLink, RouterView } from 'vue-router';
 import Carrito from '@/components/Carrito.vue';
 import BilletesIcon from '@/components/icons/IconBilletes.vue';
 
-
 </script>
 
 <template class="bg-blanco">
@@ -49,4 +48,3 @@ button {
 .btn__desk--icon:hover {
     background-color: #4fad80;
     border: #4fad80;
-}

@@ -1,7 +1,23 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import caroussel from '../data/carousel.json';
+import { RouterLink, RouterView } from 'vue-router';
+import { ref, onMounted } from 'vue';
 
+const caroussel = ref([]);
+
+const fetchDataFromApi = () => {
+  fetch('./src/data/carousel.json')
+    .then(response => response.json())
+    .then(data => {
+      caroussel.value = data;
+    })
+    .catch(error => {
+      console.error('Error al cargar el archivo JSON', error);
+    });
+};
+
+onMounted(() => {
+  fetchDataFromApi();
+});
 </script>
 
 <template>
@@ -15,10 +31,13 @@ import caroussel from '../data/carousel.json';
                 aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active"  v-for="element in caroussel" :key="element.id">
-                <img :src="element.image" class="d-block w-100" :alt="element.figcaption">
-            </div>
-        </div>
+      <div class="carousel-item active" v-if="caroussel.length > 0" v-for="element in caroussel" :key="element.id">
+        <img :src="element.image" class="d-block w-100" :alt="element.figcaption">
+      </div>
+      <div class="carousel-item" v-else>
+        <p>Cargando datos...</p>
+      </div>
+    </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

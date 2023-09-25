@@ -2,8 +2,24 @@
 import { RouterLink, RouterView } from 'vue-router';
 import Carousel from '@/components/Carousel.vue';
 import Review from '@/components/Review.vue';
-import Reviews from '../data/review.json'
+import { ref, onMounted } from 'vue';
 
+const reviews = ref([]);
+
+const fetchDataFromApi = () => {
+  fetch('./src/data/review.json')
+    .then(response => response.json())
+    .then(data => {
+      reviews.value = data;
+    })
+    .catch(error => {
+      console.error('Error al cargar el archivo JSON', error);
+    });
+};
+
+onMounted(() => {
+  fetchDataFromApi();
+});
 </script>
 
 <template class="bg-blanco">
@@ -36,7 +52,7 @@ import Reviews from '../data/review.json'
         <div id="section2">
             <h1 class="h1">Reseñas</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div v-for="review in Reviews" :key="review.id">
+                <div v-for="review in reviews" :key="review.id">
                 <div class="col">
                     <Review :review="review"/>
                 </div>
