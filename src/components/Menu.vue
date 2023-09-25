@@ -5,7 +5,7 @@ import { ref, onMounted } from 'vue';
 const menus = ref([]);
 
 const fetchDataFromApi = () => {
-  fetch('./src/data/menu.json')
+  fetch('https://raw.githubusercontent.com/AlondraX23/restauranteApi/API/menu.json')
     .then(response => response.json())
     .then(data => {
       menus.value = data;
@@ -25,10 +25,10 @@ onMounted(() => {
   <div v-for="menu in menus" :key="menu.id">
     <div class="card__menu">
       <div class="row g-0">
-        <div class="col-3">
-          <img id="imagenes" :src="menu.image" :alt="menu.description">
+        <div class="col-sm-3">
+          <img id="imagenes" :src="menu.image" :alt="menu.description" class="img-fluid">
         </div>
-        <div class="col-9">
+        <div class="col-sm-9">
           <div class="card-body">
             <h5 class="h3">{{ menu.flavor }}</h5>
             <h5 class="h2">$<span>{{ menu.price }}</span></h5>
@@ -77,7 +77,16 @@ p {
 
 #imagenes {
   width: 244px;
-  height: 244px;
+  height: 400px;
   margin: 16px 16px 16px 16px;
   border-radius: 9px;
-}</style>
+  object-fit: cover;
+}
+/* .card-img {
+  width: 244px;
+  height: 400px;
+  margin: 16px 16px 16px 16px;
+  border-radius: 9px;
+  object-fit: cover;
+} */
+</style>

@@ -15,7 +15,7 @@ const router = createRouter({
       component: () => import('../views/MenuView.vue')
     },
     {
-      path: '/menu//:nombre',
+      path: '/menu/:nombre',
       name: 'platillo',
       component: () => import('../views/PlatilloView.vue')
     },
