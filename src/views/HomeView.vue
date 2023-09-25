@@ -24,9 +24,9 @@ onMounted(() => {
 
 <template class="bg-blanco">
     <main class="main__desk">
-        <div id="section0">
+        <!-- <div id="section0">
             <Carousel />
-        </div>
+        </div> -->
         <div class="row" id="section1">
             <div class="col-7">
                 <h1 class="h1">Sobre Nosotros </h1> <!-- {{  }} -->

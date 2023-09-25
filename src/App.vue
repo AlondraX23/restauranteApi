@@ -117,6 +117,10 @@ import CarritoIcon from './components/icons/IconCarrito.vue'
 </template>
 
 <style>
+* {
+  background-color: var(--neutro-3);
+}
+
 :root {
   --primario: #E96345;
   --secundario: #D4AB7B;
@@ -159,6 +163,8 @@ import CarritoIcon from './components/icons/IconCarrito.vue'
   font-style: normal;
   font-weight: 600;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 .h1--medium {
@@ -173,6 +179,8 @@ import CarritoIcon from './components/icons/IconCarrito.vue'
   font-style: normal;
   font-weight: 700;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 .h2--neutro2 {
@@ -190,6 +198,8 @@ import CarritoIcon from './components/icons/IconCarrito.vue'
   font-style: normal;
   font-weight: 600;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 .p {
@@ -200,6 +210,8 @@ import CarritoIcon from './components/icons/IconCarrito.vue'
   font-weight: 400;
   letter-spacing: 0.32px;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 .p--white {

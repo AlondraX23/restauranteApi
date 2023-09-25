@@ -2,11 +2,16 @@
 import { RouterLink, RouterView } from 'vue-router';
 import Carrito from '@/components/Carrito.vue';
 import BilletesIcon from '@/components/icons/IconBilletes.vue';
+import Tarjeta from '../components/Tarjeta.vue';
 
 </script>
 
 <template class="bg-blanco">
     <main class="main__desk">
+        <Tarjeta class="tarjeta--16">
+            otro ejemplo
+            <div>mas ajemplos</div>
+        </Tarjeta>
         <Carrito />
         <div class="d-flex gap-3 justify-content-center mx-auto pt-4">
             <RouterLink to="/menu" class="link-underline link-underline-opacity-0">
@@ -48,3 +53,5 @@ button {
 .btn__desk--icon:hover {
     background-color: #4fad80;
     border: #4fad80;
+}
+</style>
