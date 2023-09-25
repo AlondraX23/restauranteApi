@@ -49,3 +49,4 @@ button {
 .btn__desk--icon:hover {
     background-color: #4fad80;
     border: #4fad80;
+}
