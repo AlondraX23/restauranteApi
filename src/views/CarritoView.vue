@@ -8,10 +8,6 @@ import Tarjeta from '../components/Tarjeta.vue';
 
 <template class="bg-blanco">
     <main class="main__desk">
-        <Tarjeta class="tarjeta--16">
-            otro ejemplo
-            <div>mas ajemplos</div>
-        </Tarjeta>
         <Carrito />
         <div class="d-flex gap-3 justify-content-center mx-auto pt-4">
             <RouterLink to="/menu" class="link-underline link-underline-opacity-0">

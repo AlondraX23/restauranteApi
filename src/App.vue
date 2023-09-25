@@ -149,7 +149,7 @@ import CarritoIcon from './components/icons/IconCarrito.vue'
   .main__desk {
     margin-left: 144px;
     margin-right: 144px;
-    margin-top: 48px;
+    margin-top: 100px;
     background-color: var(--neutro-3);
   }
 }
