@@ -2,7 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import { defineProps, reactive } from 'vue'
 const props = defineProps({
-  review: []
+  review: Object
 });
 
 </script>

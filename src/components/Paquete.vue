@@ -1,9 +1,23 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import ViñetaIcon from './icons/IconViñeta.vue'
-import paquetes from '../data/packages.json'
+import { ref, onMounted } from 'vue';
+const paquetes = ref([]);
 
+const fetchDataFromApi = () => {
+  fetch('./src/data/packages.json')
+    .then(response => response.json())
+    .then(data => {
+      paquetes.value = data;
+    })
+    .catch(error => {
+      console.error('Error al cargar el archivo JSON', error);
+    });
+};
 
+onMounted(() => {
+  fetchDataFromApi();
+});
 </script>
 
 <template>
