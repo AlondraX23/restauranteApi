@@ -6,37 +6,5 @@
         "password": "1234abc",
         "address": "Mountainview RdGreenwood Lake, New York(NY), 10925",
         "profilePicture": "https://pixabay.com/es/photos/fot%C3%B3grafo-hombre-las-manos-1210218/"
-    },
-    {
-        "name": "Jane Doe",
-        "user": "@janeDoe",
-        "email": "janedoe@gmail.com",
-        "password": "5678def",
-        "address": "2851 August Lane, Shreveport, Louisiana, 71101",
-        "profilePicture": "https://pixabay.com/es/photos/ni%C3%B1a-hermosa-preciosa-cama-selfie-2976593/"
-    },
-    {
-        "name": "Alice Johnson",
-        "user": "@aliceJohnson",
-        "email": "alicejohnson@gmail.com",
-        "password": "abcd1234",
-        "address": "1234 Elm Street, Springfield, Illinois, 62701",
-        "profilePicture": "https://pixabay.com/es/photos/contento-pareja-amor-gente-4191133/"
-    },
-    {
-        "name": "Bob Smith",
-        "user": "@bobSmith",
-        "email": "bobsmith@gmail.com",
-        "password": "efgh5678",
-        "address": "5678 Oak Avenue, Austin, Texas, 73301",
-        "profilePicture": "https://pixabay.com/es/photos/personas-selfie-masculina-hombre-4041024/"
-    },
-    {
-        "name": "Eva Martinez",
-        "user": "@evaMartinez",
-        "email": "evamartinez@gmail.com",
-        "password": "ijkl9012",
-        "address": "9012 Maple Lane, Miami, Florida, 33101",
-        "profilePicture": "https://pixabay.com/es/photos/mujer-sonrisa-contento-smartphone-7431928/"
     }
 ]
