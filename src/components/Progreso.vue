@@ -10,24 +10,32 @@ import CarritoEnvioIcon from './icons/IconCarritoEnvio.vue'
 </script>
 
 <template>
-    <div class="position-relative m-4">
+    <div class="position-relative m-4" id="barra">
         <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0"
             aria-valuemax="100" style="height: 8px;">
             <div class="progress-bar bg-primario" style="width: 18%"></div>
         </div>
-        <button type="button" class="position-absolute top-0 start-1 translate-middle punto"
-            style="width: 80px; height:80px;">
-            <MapaIcon class="color_icon" />
-        </button>
-        <button type="button" class="position-absolute top-0 start-2 translate-middle" style="width: 80px; height:80px;">
-            <BilletesIcon class="color_icon" />
-        </button>
-        <button type="button" class="position-absolute top-0 start-3 translate-middle" style="width: 80px; height:80px;">
-            <OllaIcon class="color_icon" />
-        </button>
-        <button type="button" class="position-absolute top-0 start-4 translate-middle" style="width: 80px; height:80px;">
-            <CarritoEnvioIcon class="color_icon" />
-        </button>
+        <a class="nav-link" href="#ubicacion">
+            <button type="button" class="position-absolute top-0 start-1 translate-middle punto"
+                style="width: 80px; height:80px;">
+                <MapaIcon class="color_icon" />
+            </button>
+        </a>      
+        <a class="nav-link" href="#pago">
+            <button type="button" class="position-absolute top-0 start-2 translate-middle" style="width: 80px; height:80px;">
+                <BilletesIcon class="color_icon" />
+            </button>
+        </a>
+        <a class="nav-link" href="#preparacion">
+            <button type="button" class="position-absolute top-0 start-3 translate-middle" style="width: 80px; height:80px;">
+                <OllaIcon class="color_icon" />
+            </button>
+        </a>
+        <a class="nav-link" href="#envio">
+            <button type="button" class="position-absolute top-0 start-4 translate-middle" style="width: 80px; height:80px;">
+                <CarritoEnvioIcon class="color_icon" />
+            </button>
+        </a>
     </div>
 </template>
 
@@ -73,4 +81,5 @@ button:hover {
     width: 100%;
     left: 100%;
 }
+
 </style>

@@ -6,7 +6,7 @@ import CarritoIcon from './icons/IconCarrito.vue'
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-lg bg-primario fixed-top" style="height: 64px; vertical-align: middle;">
+  <nav class="navbar navbar-expand-lg bg-primario" style="height: 64px; vertical-align: middle;">
     <div class="container-fluid mx-2 bg-primario">
       <RouterLink to="/" class="nb-brand bg-primario">
         <img src="src/assets/logo.svg" alt="" class="bg-primario">
