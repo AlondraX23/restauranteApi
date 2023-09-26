@@ -48,7 +48,7 @@ onMounted(() => {
         <!-- <div v-if="loading"> -->
             <div class="row" id="section1">
                 <div class="col-lg-7 col-sm-12">
-                    <!-- <h1 class="h1"> {{ sections.value[1].title }}</h1> -->
+                    <h1 class="h1"> Sobre nosotros</h1>
                     <p class="p">En el corazón de México, nació la idea de compartir la auténtica delicia de las empanadas con
                         el mundo. En [Nombre de la Empresa], nuestra historia comienza con una familia apasionada por la cocina
                         mexicana y un deseo profundo de preservar las tradiciones culinarias que han perdurado por generaciones.
