@@ -23,7 +23,9 @@ import CardDireccion from '../components/CardDireccion.vue';
 
         </div>
         <br><br><br>
+<!-- --------------------------------   Inicio del acordeón    --------------------------------------------------------->
         <div id="accordion">
+          <!-- -------------------------------- Dirección y fecha de entrega  --------------------------------------------------------->
             <div class="card" id="dirección">
                 <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <h3>Dirección y fecha de entrega</h3>
@@ -93,6 +95,7 @@ import CardDireccion from '../components/CardDireccion.vue';
                 </button>
             </div>
             <br><br><br>
+            <!-- --------------------------------  Pago   --------------------------------------------------------->
             <div class="card" id="pago">
                 <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <h3>Pago</h3>
@@ -137,6 +140,7 @@ import CardDireccion from '../components/CardDireccion.vue';
                 </button>
             </div>
             <br><br><br>
+            <!-- --------------------------------  Estado de elaboración  --------------------------------------------------------->
             <div class="card" id="elaboración">
                 <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <h3>Elaboración</h3>
@@ -150,6 +154,7 @@ import CardDireccion from '../components/CardDireccion.vue';
                 </button>
             </div>
             <br><br><br>
+            <!-- --------------------------------  Envío  --------------------------------------------------------->
             <div class="card" id="envío">
                 <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <h3>Envío</h3>
