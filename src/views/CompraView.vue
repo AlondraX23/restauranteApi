@@ -22,21 +22,19 @@ import CardDireccion from '../components/CardDireccion.vue';
             <Progreso />
 
         </div>
+        <br><br><br>
+<!-- --------------------------------   Inicio del acordeón    --------------------------------------------------------->
         <div id="accordion">
+          <!-- -------------------------------- Dirección y fecha de entrega  --------------------------------------------------------->
             <div class="card" id="dirección">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Componente de dirección
+                <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h3>Dirección y fecha de entrega</h3>
                 <br>
                 <div class="card__menu">
         <div class="container-fluid text-center p-0">
             <slot></slot>
             <div class="row row-cols-sm-7 g-2 g-lg-2">
-                <div class="col-3">
-                    <div class="mb-2">
-                        <input type="text" class="input__desk" id="exampleInputtext1" placeholder="Colonia"
-                            aria-describedby="textHelp">
-                    </div>
-                </div>
+                
                 <div class="col-3">
                     <div class="mb-2">
                         <input type="text" class="input__desk" id="exampleInputtext2" placeholder="Calle"
@@ -55,58 +53,64 @@ import CardDireccion from '../components/CardDireccion.vue';
                             aria-describedby="textHelp">
                     </div>
                 </div>
-                <div class="col">
-                    <div class="mb-3">
-                        <input type="number" class="input__desk" id="exampleInputtext5" placeholder="C.P"
-                            aria-describedby="textHelp">
-                    </div>
+                <br><br>
+                <div>
+                  <div class="col">
+                      <div class="mb-2">
+                          <input type="text" class="input__desk" id="exampleInputtext1" placeholder="Colonia"
+                              aria-describedby="textHelp">
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="mb-3 col">
+                          <input type="number" class="input__desk" id="exampleInputtext5" placeholder="C.P."
+                              aria-describedby="textHelp">
+                      </div>
+                  </div>
+                  <div class="col-1">
+                      <select aria-label="Default select example">
+                          <option selected>Seleccionar</option>
+                          <option value="1">Álvaro Obregón</option>
+                          <option value="2">Miguel Hidalgo</option>
+                          <option value="3">Benito Juárez</option>
+                      </select>
+                  </div> 
                 </div>
+                <div class="btn__date pt-2">
                 <div class="col">
-                    <select aria-label="Default select example">
-                        <option selected>Seleccionar</option>
-                        <option value="1">Álvaro Obregón</option>
-                        <option value="2">Miguel Hidalgo</option>
-                        <option value="3">Benito Juárez</option>
-                    </select>
+                    <input type="date" class="input__desk" id="exampleInputtext1" placeholder="Ejemplo"
+                        aria-describedby="textHelp">
                 </div>
-                <div class="col">
+                <div class="col-6">
+                  <br><br>
                     <button class="btn__desk btn__desk-ok me-2">
                         <p class="p p--white">Añadir</p>
                     </button>
-                </div>
-
+            </div>
             </div>
         </div>
-        <div>
-            <div class="btn__date pt-2">
-                <button class="btn__desk btn__desk--icon-ok">
-                    <!-- <CalendarioIcon /> -->
-                    <p class="p">Seleccional fecha</p>
-                </button>
-                <div class="mb-3">
-                    <input type="date" class="input__desk" id="exampleInputtext1" placeholder="Ejemplo o instrucciones"
-                        aria-describedby="textHelp">
-                </div>
-            </div>
         </div>
     </div>
     <RouterView />
                 </button>
             </div>
+            <br><br><br>
+            <!-- --------------------------------  Pago   --------------------------------------------------------->
             <div class="card" id="pago">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Componente de pago
+                <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h3>Pago</h3>
                 <br>
                 <div>
-    <h2>Agregar Métodos de Pago</h2>
+    <h6>Agregar método de pago</h6>
     <form @submit.prevent="agregarMetodoDePago">
       <div class="form-group">
-        <label for="nombre">Nombre del Titular:</label>
-        <input type="text" id="nombre" v-model="nuevoMetodo.nombre" required>
+        <br>
+        <input type="text" class="input__desk" id="nombre" placeholder="Nombre del titular" v-model="nuevoMetodo.nombre" required>
       </div>
       <div class="form-group">
-        <label for="tipo">Tipo de Tarjeta:</label>
-        <select id="tipo" v-model="nuevoMetodo.tipo" required>
+        <br>
+        <label for="tipo">Tipo de tarjeta</label> <br>
+        <select id="tipo" class="input__desk" v-model="nuevoMetodo.tipo" required>
           <option value="Visa">Visa</option>
           <option value="MasterCard">MasterCard</option>
           <option value="American Express">American Express</option>
@@ -114,14 +118,18 @@ import CardDireccion from '../components/CardDireccion.vue';
         </select>
       </div>
       <div class="form-group">
-        <label for="numero">Número de Tarjeta:</label>
-        <input type="text" id="numero" v-model="nuevoMetodo.numero" required>
+        <br>
+        <input type="text" placeholder="Número de tarjeta" id="numero" v-model="nuevoMetodo.numero" required>
       </div>
       <div class="form-group">
-        <label for="fecha">Fecha de Vencimiento:</label>
+        <br>
+        <label for="fecha">Fecha de vencimiento</label> <br>
         <input type="text" id="fecha" v-model="nuevoMetodo.fechaVencimiento" placeholder="MM/YY" required>
       </div>
-      <button type="submit">Agregar Método de Pago</button>
+      <br><br>
+      <button type="submit" class="btn__desk btn__desk-ok me-2">Agregar tarjeta</button>
+      <br><br>
+      <button type="submit" class="btn__desk btn__desk-ok me-2">Pago en efectivo</button>
     </form>
     <ul>
       <li v-for="(metodo, index) in metodosDePago" :key="index">
@@ -131,25 +139,29 @@ import CardDireccion from '../components/CardDireccion.vue';
   </div>
                 </button>
             </div>
+            <br><br><br>
+            <!-- --------------------------------  Estado de elaboración  --------------------------------------------------------->
             <div class="card" id="elaboración">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Componente de elaboración
+                <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h3>Elaboración</h3>
                 <div>
     <!-- Botón "Confirmar pedido" -->
-    <button @click="confirmarPedido">Confirmar Pedido</button>
+    <button @click="confirmarPedido" type="submit" class="btn__desk btn__desk-ok me-2">Confirmar estado del pedido</button>
 
     <!-- Mensaje de confirmación -->
     <p v-if="pedidoConfirmado">¡Su pedido se está preparando!</p>
   </div>
                 </button>
             </div>
+            <br><br><br>
+            <!-- --------------------------------  Envío  --------------------------------------------------------->
             <div class="card" id="envío">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Componente de envío
+                <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h3>Envío</h3>
                 <br>
                 <div>
-    <button @click="enviarPedido">Enviar a la dirección especificada</button>
-    <p v-if="pedidoEnCamino">Su pedido está en camino</p>
+    <button @click="enviarPedido" type="submit" class="btn__desk btn__desk-ok me-2">Enviar a la dirección especificada</button>
+    <p v-if="pedidoEnCamino">¡Su pedido está en camino!</p>
   </div>
                 </button>
             </div>
