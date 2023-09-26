@@ -32,7 +32,7 @@ console.log(route.path);
     <main class="main__desk" v-for="plato in platillo" :key="plato.id">
         <div v-if="plato.flavor == $route.params.nombre" class="row" id="info">
             <div class="col-lg-6 col-md-12 align-self-center">
-                <img :src="plato.image" class="img-fluid rounded mx-auto d-block" alt="">
+                <img :src="plato.image" class=" rounded mx-auto d-block" alt="">
             </div>
             <div class="col-lg-6 col-md-12 vstack">
                 <h1 class="h1-medium">{{ $route.params.nombre }}</h1>
@@ -99,7 +99,9 @@ console.log(route.path);
     img {
         margin: 16px 16px 16px 16px;
         border-radius: 9px;
-        object-fit: cover;
+        object-fit:cover;
+        width: 50%;
+        transform: scale(2);
     }
 
     .label__price {
