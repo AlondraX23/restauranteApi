@@ -97,6 +97,21 @@ import CarritoIcon from './components/icons/IconCarrito.vue'
         aria-describedby="emailHelp">
     </div> -->
 
+    <form>
+      <label for="correo">
+        Usuario
+        <input type="email" id="correo">
+        <br>
+      </label>
+      <label for="contraseña">
+        Contraseña
+        <input type="password" id="contraseña">
+      </label>
+      <br>
+      <button class="btn btn-primary">Ingresar</button>
+    </form>
+
+
     <!-- Select -->
     <!-- <select aria-label="Default select example">
       <option selected>Open this select menu</option>
