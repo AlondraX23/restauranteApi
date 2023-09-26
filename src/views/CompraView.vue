@@ -32,12 +32,7 @@ import CardDireccion from '../components/CardDireccion.vue';
         <div class="container-fluid text-center p-0">
             <slot></slot>
             <div class="row row-cols-sm-7 g-2 g-lg-2">
-                <div class="col-3">
-                    <div class="mb-2">
-                        <input type="text" class="input__desk" id="exampleInputtext1" placeholder="Colonia"
-                            aria-describedby="textHelp">
-                    </div>
-                </div>
+                
                 <div class="col-3">
                     <div class="mb-2">
                         <input type="text" class="input__desk" id="exampleInputtext2" placeholder="Calle"
@@ -56,26 +51,35 @@ import CardDireccion from '../components/CardDireccion.vue';
                             aria-describedby="textHelp">
                     </div>
                 </div>
-                <div class="col">
-                    <div class="mb-3">
-                        <input type="number" class="input__desk" id="exampleInputtext5" placeholder="C.P."
-                            aria-describedby="textHelp">
-                    </div>
+                <br><br>
+                <div>
+                  <div class="col">
+                      <div class="mb-2">
+                          <input type="text" class="input__desk" id="exampleInputtext1" placeholder="Colonia"
+                              aria-describedby="textHelp">
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="mb-3 col">
+                          <input type="number" class="input__desk" id="exampleInputtext5" placeholder="C.P."
+                              aria-describedby="textHelp">
+                      </div>
+                  </div>
+                  <div class="col-1">
+                      <select aria-label="Default select example">
+                          <option selected>Seleccionar</option>
+                          <option value="1">Álvaro Obregón</option>
+                          <option value="2">Miguel Hidalgo</option>
+                          <option value="3">Benito Juárez</option>
+                      </select>
+                  </div> 
                 </div>
-                <div class="col">
-                    <select aria-label="Default select example">
-                        <option selected>Seleccionar</option>
-                        <option value="1">Álvaro Obregón</option>
-                        <option value="2">Miguel Hidalgo</option>
-                        <option value="3">Benito Juárez</option>
-                    </select>
-                </div> 
                 <div class="btn__date pt-2">
-                <div class="mb-3">
-                    <input type="date" class="input__desk" id="exampleInputtext1" placeholder="Ejemplo o instrucciones"
+                <div class="col">
+                    <input type="date" class="input__desk" id="exampleInputtext1" placeholder="Ejemplo"
                         aria-describedby="textHelp">
                 </div>
-                <div class="col">
+                <div class="col-6">
                   <br><br>
                     <button class="btn__desk btn__desk-ok me-2">
                         <p class="p p--white">Añadir</p>
@@ -97,12 +101,13 @@ import CardDireccion from '../components/CardDireccion.vue';
     <h6>Agregar método de pago</h6>
     <form @submit.prevent="agregarMetodoDePago">
       <div class="form-group">
-        <label for="nombre">Nombre del titular:</label> <br>
-        <input type="text" id="nombre" v-model="nuevoMetodo.nombre" required>
+        <br>
+        <input type="text" class="input__desk" id="nombre" placeholder="Nombre del titular" v-model="nuevoMetodo.nombre" required>
       </div>
       <div class="form-group">
-        <label for="tipo">Tipo de tarjeta:</label> <br>
-        <select id="tipo" v-model="nuevoMetodo.tipo" required>
+        <br>
+        <label for="tipo">Tipo de tarjeta</label> <br>
+        <select id="tipo" class="input__desk" v-model="nuevoMetodo.tipo" required>
           <option value="Visa">Visa</option>
           <option value="MasterCard">MasterCard</option>
           <option value="American Express">American Express</option>
@@ -110,15 +115,16 @@ import CardDireccion from '../components/CardDireccion.vue';
         </select>
       </div>
       <div class="form-group">
-        <label for="numero">Número de tarjeta:</label> <br>
-        <input type="text" id="numero" v-model="nuevoMetodo.numero" required>
+        <br>
+        <input type="text" placeholder="Número de tarjeta" id="numero" v-model="nuevoMetodo.numero" required>
       </div>
       <div class="form-group">
-        <label for="fecha">Fecha de vencimiento:</label> <br>
+        <br>
+        <label for="fecha">Fecha de vencimiento</label> <br>
         <input type="text" id="fecha" v-model="nuevoMetodo.fechaVencimiento" placeholder="MM/YY" required>
       </div>
       <br><br>
-      <button type="submit" class="btn__desk btn__desk-ok me-2">Agregar</button>
+      <button type="submit" class="btn__desk btn__desk-ok me-2">Agregar tarjeta</button>
       <br><br>
       <button type="submit" class="btn__desk btn__desk-ok me-2">Pago en efectivo</button>
     </form>
