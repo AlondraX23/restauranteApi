@@ -4,7 +4,6 @@ import { RouterLink, RouterView } from 'vue-router';
 import Paquete from '@/components/Paquete.vue';
 import Factura from '@/components/Factura.vue';
 import CardProductos from '@/components/CardProductos.vue';
-import CardDireccion from '@/components/CardDireccion.vue';
 import SobreIcon from '@/components/icons/IconSobre.vue';
 
 </script>
@@ -37,10 +36,6 @@ import SobreIcon from '@/components/icons/IconSobre.vue';
             <CardProductos>
                 <div><input type="text"></div>
             </CardProductos>
-        </div>
-        <div class="col-10 mx-auto pb-5">
-            <h2 class="h3">Dirección y fecha</h2>
-            <CardDireccion />
         </div>
         <div id="factura">
             <Factura></Factura>

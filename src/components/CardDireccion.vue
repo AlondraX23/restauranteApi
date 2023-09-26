@@ -19,25 +19,25 @@ import CalendarioIcon from '@/components/icons/IconCalendario.vue'
                 </div>
                 <div class="col-3">
                     <div class="mb-2">
-                        <input type="text" class="input__desk" id="exampleInputtext1" placeholder="Calle"
+                        <input type="text" class="input__desk" id="exampleInputtext2" placeholder="Calle"
                             aria-describedby="textHelp">
                     </div>
                 </div>
                 <div class="col">
                     <div class="mb-3">
-                        <input type="number" class="input__desk" id="exampleInputtext1" placeholder="No. Int"
+                        <input type="number" class="input__desk" id="exampleInputtext3" placeholder="No. Int"
                             aria-describedby="textHelp">
                     </div>
                 </div>
                 <div class="col">
                     <div class="mb-3">
-                        <input type="number" class="input__desk" id="exampleInputtext1" placeholder="No. Ext"
+                        <input type="number" class="input__desk" id="exampleInputtext4" placeholder="No. Ext"
                             aria-describedby="textHelp">
                     </div>
                 </div>
                 <div class="col">
                     <div class="mb-3">
-                        <input type="number" class="input__desk" id="exampleInputtext1" placeholder="C.P"
+                        <input type="number" class="input__desk" id="exampleInputtext5" placeholder="C.P"
                             aria-describedby="textHelp">
                     </div>
                 </div>
