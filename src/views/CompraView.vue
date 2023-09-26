@@ -119,6 +119,8 @@ import CardDireccion from '../components/CardDireccion.vue';
       </div>
       <br><br>
       <button type="submit" class="btn__desk btn__desk-ok me-2">Agregar</button>
+      <br><br>
+      <button type="submit" class="btn__desk btn__desk-ok me-2">Pago en efectivo</button>
     </form>
     <ul>
       <li v-for="(metodo, index) in metodosDePago" :key="index">
