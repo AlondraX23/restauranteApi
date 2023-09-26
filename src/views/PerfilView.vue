@@ -3,6 +3,7 @@ import Tarjeta from '../components/Tarjeta.vue';
 import UserIcon from '../components/icons/IconUsuario.vue'
 import SobreIcon from '@/components/icons/IconSobre.vue'
 import MapaIcon from '@/components/icons/IconMapa.vue'
+import IconUsuarioCirculo from '../components/icons/IconUsuarioCirculo.vue';
 import { ref, onMounted } from 'vue';
 
 const loading = ref(true);
@@ -30,6 +31,25 @@ onMounted(() => {
 
 <template>
     <main class="main__desk" v-for="user in users" :key="user.id">
+        <div class="right">
+            <Tarjeta class="tarjeta--16 mb-4">
+                <div class="hstack">
+                    <RouterLink to="/carrito" class="link-underline link-underline-opacity-0">
+                        <button class="button btn__desk btn__desk--outline me-2">
+                            <p class="p">Carrito</p>
+                        </button>
+                    </RouterLink>
+                    <RouterLink to="/entregas" class="link-underline link-underline-opacity-0">
+                        <button class="button btn__desk btn__desk--outline me-2">
+                            <p class="p">Entregas</p>
+                        </button>
+                    </RouterLink>
+                    <RouterLink to="/perfil" class="link-underline link-underline-opacity-0">
+                        <IconUsuarioCirculo class="icon-dorado"/>
+                    </RouterLink>
+                </div>
+            </Tarjeta>
+        </div>
         <Tarjeta>
             <div class="row">
                 <div class="col-8 text-start p-0">
@@ -82,7 +102,7 @@ onMounted(() => {
             </div>
         </Tarjeta>
         <div class="d-grid d-flex justify-content-md-end mt-4">
-            <button class="btn__desk btn__desk--icon-outline-no me-2" type="button" data-bs-toggle="modal"
+            <button class=" btn__desk btn__desk--icon-outline-no me-2" type="button" data-bs-toggle="modal"
                 data-bs-target="#exampleModal">
                 <svg class="icon" width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -101,15 +121,15 @@ onMounted(() => {
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5 h3" id="exampleModalLabel">¿Está seguro de eliminar su cuenta?</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="button btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-footer">
                         <RouterLink to="/inicio">
-                            <button type="button" class="btn__desk btn__desk--outline-no" data-bs-dismiss="modal">
+                            <button type="button" class="button btn__desk btn__desk--outline-no" data-bs-dismiss="modal">
                                 <p class="p">Sí</p>
                             </button>
                         </RouterLink>
-                        <button type="button" class="btn__desk btn__desk-ok" data-bs-dismiss="modal">
+                        <button type="button" class="button btn__desk btn__desk-ok" data-bs-dismiss="modal">
                             <p class="p p--white">No, regresar al</p>
                         </button>
                     </div>
@@ -119,7 +139,20 @@ onMounted(() => {
 
     </main>
 </template>
-<style>
+<style scoped>
+.tarjeta--16 {
+    width: fit-content;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-dorado {
+    fill: var(--secundario);
+}
+
 .icon-black {
     fill: var(--neutro-2);
 }
@@ -127,5 +160,17 @@ onMounted(() => {
 ul {
     list-style-type: none;
 
+}
+
+.button {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        margin: 0;
+    }
+    border-color: var(--neutro-2);
 }
 </style>

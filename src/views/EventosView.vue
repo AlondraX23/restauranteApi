@@ -6,10 +6,33 @@ import Factura from '@/components/Factura.vue';
 import CardProductos from '@/components/CardProductos.vue';
 import SobreIcon from '@/components/icons/IconSobre.vue';
 
+import { ref, onMounted } from 'vue';
+
+const loading = ref(true);
+const users = ref([]);
+
+const fetchDataFromApi = async () => {
+    try {
+        const res = await fetch('https://raw.githubusercontent.com/AlondraX23/restauranteApi/API/users.json')
+        users.value = await res.json()
+        console.log("ok")
+    } catch (error) {
+        console.log(error)
+    } finally {
+        setTimeout(() => {
+            loading.value = false
+        }, 2000)
+    }
+}
+
+onMounted(() => {
+    fetchDataFromApi();
+});
+console.log(users.email)
 </script>
 
 <template class="bg-blanco">
-    <main class="main__desk">
+    <main class="main__desk" v-for="user in users" :key="user.id">
         <div id="descripcion-general">
             <h2 class="h2">Arma tu paquete</h2>
             <p class="p">Morem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
@@ -50,7 +73,6 @@ import SobreIcon from '@/components/icons/IconSobre.vue';
                 <button class="btn__desk btn__desk-ok me-2">
                     <p class="p p--white">Hacer pedido</p>
                 </button>
-
             </RouterLink>
         </div>
 
@@ -63,7 +85,7 @@ import SobreIcon from '@/components/icons/IconSobre.vue';
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-
+                        {{ user.email }}
                     </div>
                     <div class="modal-footer">
                         <RouterLink to="/perfil">
@@ -71,7 +93,7 @@ import SobreIcon from '@/components/icons/IconSobre.vue';
                                 <p class="p">No, editar</p>
                             </button>
                         </RouterLink>
-                        <button type="button" class="btn__desk btn__desk-ok">
+                        <button type="button" class="btn__desk btn__desk-ok" data-bs-dismiss="modal">
                             <p class="p p--white">Sí, es correcto</p>
                         </button>
                     </div>
