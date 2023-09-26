@@ -1,19 +1,22 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import { ref, onMounted } from 'vue';
-
+const loading = ref(true);
 const menus = ref([]);
 
-const fetchDataFromApi = () => {
-  fetch('https://raw.githubusercontent.com/AlondraX23/restauranteApi/API/menu.json')
-    .then(response => response.json())
-    .then(data => {
-      menus.value = data;
-    })
-    .catch(error => {
-      console.error('Error al cargar el archivo JSON', error);
-    });
-};
+const fetchDataFromApi = async () => {
+  try {
+    const res = await fetch('https://raw.githubusercontent.com/AlondraX23/restauranteApi/API/menu.json')
+    menus.value = await res.json()
+    console.log(menus.value[0].flavor)
+  } catch (error) {
+    console.log(error)
+  } finally {
+    setTimeout(() => {
+      loading.value = false
+    }, 2000)
+  }
+}
 
 onMounted(() => {
   fetchDataFromApi();
@@ -34,6 +37,14 @@ onMounted(() => {
             <h5 class="h2">$<span>{{ menu.price }}</span></h5>
             <div class="d-flex align-items-center h-100">
               <p class="p text-truncate">{{ menu.description }}</p>
+            </div>
+            <div class="d-grid d-flex justify-content-end">
+              <button class="btn__desk btn__desk-ok mt-5">
+                <RouterLink :to="`/menu/${menu.flavor}`" class="link-underline link-underline-opacity-0">
+                  <p class="p p--white">Ver más</p>
+                </RouterLink>
+              </button>
+
             </div>
           </div>
         </div>
@@ -76,17 +87,10 @@ p {
 }
 
 #imagenes {
-  width: 244px;
+  max-width: 90%;
   height: 400px;
-  margin: 16px 16px 16px 16px;
+  margin: 16px;
   border-radius: 9px;
   object-fit: cover;
 }
-/* .card-img {
-  width: 244px;
-  height: 400px;
-  margin: 16px 16px 16px 16px;
-  border-radius: 9px;
-  object-fit: cover;
-} */
 </style>

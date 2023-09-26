@@ -2,9 +2,6 @@
 import { RouterLink, RouterView } from 'vue-router';
 import Menu from '@/components/Menu.vue';
 
-// const props = defineProps({
-//   menus: Object
-// });
 </script>
 
 <template class="bg-blanco">

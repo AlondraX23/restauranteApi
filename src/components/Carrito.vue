@@ -6,11 +6,13 @@ import { RouterLink, RouterView } from "vue-router";
   <div class="card__cart">
     <div class="row g-0">
       <div class="col-sm-3">
-        <img src="../assets/img/paquete3.jpg" class="card-img"
+        <img src="../assets/img/paquete3.jpg" class=" img-fluid rounded mx-auto d-block"
           alt="La experiencia completa de nuestro variado menú en un solo paquete." />
       </div>
+      <!-- texto -->
       <div class="col-sm-9 align-self-center px-4">
-        <div class="vstack  " >
+        <div class="m-3"></div>
+        <div class="vstack  ">
           <div class="d-flex justify-content-between" id="title-cost">
             <h5 class="h2">Paquete 3</h5>
             <h5 class="h2 h2--neutro2">$<span>3899</span></h5>
@@ -18,9 +20,10 @@ import { RouterLink, RouterView } from "vue-router";
           <p class="p text-wrap ">
             La experiencia completa de nuestro variado menú en un solo paquete.
           </p>
+          <!-- botones -->
           <div class="row pt-4 bg-transparent">
             <div class="col-lg-6 col-sm-12">
-              <div class="ps-0 pb-1">
+              <div class="ps-0 pb-2">
                 <div class="contador flex">
                   <button class="btn__contador">
                     <svg width="16" height="3" viewBox="0 0 16 3" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +44,6 @@ import { RouterLink, RouterView } from "vue-router";
               </div>
             </div>
             <div class="col-lg-6 col-sm-12 d-grid gap-2 d-flex justify-content-md-end">
-
               <div class="">
                 <button class="btn__desk btn__desk--icon-outline me-2 flex gray" color="grey">
                   <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,9 +57,9 @@ import { RouterLink, RouterView } from "vue-router";
                   Eliminar
                 </button>
               </div>
-              <div class="">
+              <RouterLink to="/menu" class="link-underline link-underline-opacity-0">
                 <button class="btn__desk me-2 flex">Seguir comprando</button>
-              </div>
+              </RouterLink>
             </div>
           </div>
         </div>
@@ -171,9 +173,7 @@ import { RouterLink, RouterView } from "vue-router";
 
 @media (max-width: 991.98px) {
   .card-img {
-    width: 90%;
-    height: 400px;
-    margin: 16px 16px 16px 16px;
+    margin-top: 16px;
     border-radius: 9px;
     object-fit: cover;
   }
