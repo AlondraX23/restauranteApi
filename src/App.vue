@@ -105,15 +105,12 @@ import Footer from './components/Footer.vue';
       <option value="3">Three</option>
     </select> -->
   </main>
-  <Footer class=""></Footer>
+  <Footer></Footer>
 
   <!-- <RouterView /> -->
 </template>
 
 <style>
-/* * {
-  background-color: var(--neutro-3);
-} */
 
 :root {
   --primario: #E96345;
@@ -130,11 +127,6 @@ import Footer from './components/Footer.vue';
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 /* ---- */
 
-/* * {
-  background-color: var(--neutro-3);
-
-} */
-
 body {
   background-color: var(--neutro-3);
 }
@@ -148,17 +140,11 @@ body {
 }
 
 
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
 @media (min-width: 1024px) {
   .main__desk {
     margin-left: 144px;
     margin-right: 144px;
     margin-top: 50px;
-    min-height: 24vh;
     background-color: var(--neutro-3);
   }
 }

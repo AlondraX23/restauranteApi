@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import CarritoIcon from './icons/IconCarrito.vue'
+// import logo from 'src/assets/logo.svg'
 
 
 </script>
@@ -9,8 +10,9 @@ import CarritoIcon from './icons/IconCarrito.vue'
   <nav class="navbar navbar-expand-lg bg-primario" style="height: 64px; vertical-align: middle;">
     <div class="container-fluid mx-2 bg-primario">
       <RouterLink to="/" class="nb-brand bg-primario">
-        <img src="src/assets/logo.svg" alt="" class="bg-primario">
+        <img src="@/assets/logo.svg " alt="" class="bg-primario">
         Empanadas
+        <logo></logo>
       </RouterLink>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

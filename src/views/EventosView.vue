@@ -66,7 +66,7 @@ console.log(users.email)
         <div id="final-btn" class="d-flex gap-3 justify-content-center mx-auto pt-4">
             <!-- Button trigger modal -->
             <button type="button" class="btn__desk btn__desk--icon" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <SobreIcon />
+                <SobreIcon class="color_icon"/>
                 <p class="p">Enviar</p>
             </button>
             <RouterLink to="/compra" class="link-underline link-underline-opacity-0">
