@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router';
 import Progreso from '@/components/Progreso.vue';
 import CardDireccion from '../components/CardDireccion.vue';
+import Tarjeta from '../components/Tarjeta.vue';
 //myCollapseEl.addEventListener('shown.bs.collapse'), event => {
 //    document.getElementById("dirección").style.display = "block";
 //}
@@ -14,161 +15,181 @@ import CardDireccion from '../components/CardDireccion.vue';
 //myCollapseEl.addEventListener('shown.bs.collapse'), event => {
 //    document.getElementById("envío").style.display = "block";
 //}
-//</script>
+//
+</script>
 
 <template>
-    <main class="main__desk">
-        <div class="pt-4">
-            <Progreso />
-
-        </div>
-        <br><br><br>
-<!-- --------------------------------   Inicio del acordeón    --------------------------------------------------------->
-        <div id="accordion">
-          <!-- -------------------------------- Dirección y fecha de entrega  --------------------------------------------------------->
-            <div class="card" id="dirección">
-                <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <h3>Dirección y fecha de entrega</h3>
-                <br>
-                <div class="card__menu">
-        <div class="container-fluid text-center p-0">
-            <slot></slot>
-            <div class="row row-cols-sm-7 g-2 g-lg-2">
-                
-                <div class="col-3">
-                    <div class="mb-2">
-                        <input type="text" class="input__desk" id="exampleInputtext2" placeholder="Calle"
-                            aria-describedby="textHelp">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="mb-3">
-                        <input type="number" class="input__desk" id="exampleInputtext3" placeholder="No. Int"
-                            aria-describedby="textHelp">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="mb-3">
-                        <input type="number" class="input__desk" id="exampleInputtext4" placeholder="No. Ext"
-                            aria-describedby="textHelp">
-                    </div>
-                </div>
-                <br><br>
-                <div>
-                  <div class="col">
-                      <div class="mb-2">
-                          <input type="text" class="input__desk" id="exampleInputtext1" placeholder="Colonia"
-                              aria-describedby="textHelp">
-                      </div>
-                  </div>
-                  <div class="col">
-                      <div class="mb-3 col">
-                          <input type="number" class="input__desk" id="exampleInputtext5" placeholder="C.P."
-                              aria-describedby="textHelp">
-                      </div>
-                  </div>
-                  <div class="col-1">
-                      <select aria-label="Default select example">
-                          <option selected>Seleccionar</option>
-                          <option value="1">Álvaro Obregón</option>
-                          <option value="2">Miguel Hidalgo</option>
-                          <option value="3">Benito Juárez</option>
-                      </select>
-                  </div> 
-                </div>
-                <div class="btn__date pt-2">
-                <div class="col">
-                    <input type="date" class="input__desk" id="exampleInputtext1" placeholder="Ejemplo"
-                        aria-describedby="textHelp">
-                </div>
-                <div class="col-6">
-                  <br><br>
-                    <button class="btn__desk btn__desk-ok me-2">
-                        <p class="p p--white">Añadir</p>
-                    </button>
-            </div>
-            </div>
-        </div>
-        </div>
+  <main class="main__desk">
+    <div class="p-2 pt-4 bg-blanco sticky-top">
+      <Progreso />
     </div>
-    <RouterView />
-                </button>
-            </div>
-            <br><br><br>
-            <!-- --------------------------------  Pago   --------------------------------------------------------->
-            <div class="card" id="pago">
-                <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <h3>Pago</h3>
-                <br>
+    <div style="height: fit-content;">
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+        <!-- Ubicación -->
+        <div id="ubicacion" style="padding-top: 100px;">
+          <h3 class="h2--medium">Dirección y fecha de entrega</h3>
+          <br>
+          <div class="card__menu">
+            <div class="container-fluid text-center p-0">
+              <slot></slot>
+              <div class="row row-cols-sm-7">
+                <div class="col-3">
+                  <div class="">
+                    <input type="text" class="input__desk" id="exampleInputtext2" placeholder="Calle"
+                      aria-describedby="textHelp">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="mb-4">
+                    <input type="number" class="input__desk" id="exampleInputtext3" placeholder="No. Int"
+                      aria-describedby="textHelp">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="mb-4">
+                    <input type="number" class="input__desk" id="exampleInputtext4" placeholder="No. Ext"
+                      aria-describedby="textHelp">
+                  </div>
+                </div>
                 <div>
-    <h6>Agregar método de pago</h6>
-    <form @submit.prevent="agregarMetodoDePago">
-      <div class="form-group">
-        <br>
-        <input type="text" class="input__desk" id="nombre" placeholder="Nombre del titular" v-model="nuevoMetodo.nombre" required>
-      </div>
-      <div class="form-group">
-        <br>
-        <label for="tipo">Tipo de tarjeta</label> <br>
-        <select id="tipo" class="input__desk" v-model="nuevoMetodo.tipo" required>
-          <option value="Visa">Visa</option>
-          <option value="MasterCard">MasterCard</option>
-          <option value="American Express">American Express</option>
-          <!-- Agrega otros tipos de tarjetas si es necesario -->
-        </select>
-      </div>
-      <div class="form-group">
-        <br>
-        <input type="text" placeholder="Número de tarjeta" id="numero" v-model="nuevoMetodo.numero" required>
-      </div>
-      <div class="form-group">
-        <br>
-        <label for="fecha">Fecha de vencimiento</label> <br>
-        <input type="text" id="fecha" v-model="nuevoMetodo.fechaVencimiento" placeholder="MM/YY" required>
-      </div>
-      <br><br>
-      <button type="submit" class="btn__desk btn__desk-ok me-2">Agregar tarjeta</button>
-      <br><br>
-      <button type="submit" class="btn__desk btn__desk-ok me-2">Pago en efectivo</button>
-    </form>
-    <ul>
-      <li v-for="(metodo, index) in metodosDePago" :key="index">
-        {{ metodo.nombre }} ({{ metodo.tipo }}): {{ metodo.numero }} - Vencimiento: {{ metodo.fechaVencimiento }}
-      </li>
-    </ul>
-  </div>
-                </button>
+                  <div class="col">
+                    <div class="pb-3">
+                      <input type="text" class="input__desk" id="exampleInputtext1" placeholder="Colonia"
+                        aria-describedby="textHelp">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="pb-3 col">
+                      <input type="number" class="input__desk" id="exampleInputtext5" placeholder="C.P."
+                        aria-describedby="textHelp">
+                    </div>
+                  </div>
+                  <div class="d-flex flex-wrap justify-content-end">
+                    <div class=" pb-3">
+                      <select aria-label="Default select example">
+                        <option selected>Seleccione la Alcaldía</option>
+                        <option value="1">Álvaro Obregón</option>
+                        <option value="2">Miguel Hidalgo</option>
+                        <option value="3">Benito Juárez</option>
+                      </select>
+                    </div>
+                    <div class="pb-3 ps-3">
+                      <div class="btn__date">
+                        <button class="btn__desk btn__desk--icon-ok">
+                          <!-- <CalendarioIcon /> -->
+                          <p class="p">Fecha</p>
+                        </button>
+                        <div class="mb-3">
+                          <input type="date" class="input__desk" id="exampleInputtext1"
+                            placeholder="Ejemplo o instrucciones" aria-describedby="textHelp">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-row-reverse">
+                  <button class="btn__desk btn__desk-ok me-2">
+                    <p class="p p--white">Añadir</p>
+                  </button>
+                </div>
+              </div>
             </div>
-            <br><br><br>
-            <!-- --------------------------------  Estado de elaboración  --------------------------------------------------------->
-            <div class="card" id="elaboración">
-                <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <h3>Elaboración</h3>
-                <div>
-    <!-- Botón "Confirmar pedido" -->
-    <button @click="confirmarPedido" type="submit" class="btn__desk btn__desk-ok me-2">Confirmar estado del pedido</button>
-
-    <!-- Mensaje de confirmación -->
-    <p v-if="pedidoConfirmado">¡Su pedido se está preparando!</p>
-  </div>
-                </button>
-            </div>
-            <br><br><br>
-            <!-- --------------------------------  Envío  --------------------------------------------------------->
-            <div class="card" id="envío">
-                <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <h3>Envío</h3>
-                <br>
-                <div>
-    <button @click="enviarPedido" type="submit" class="btn__desk btn__desk-ok me-2">Enviar a la dirección especificada</button>
-    <p v-if="pedidoEnCamino">¡Su pedido está en camino!</p>
-  </div>
-                </button>
-            </div>
+          </div>
         </div>
-    </main>
+        <div style="height: 300px;"></div>
+        <!-- Pago -->
+        <div id="pago" style="padding-top: 100px;">
+          <h3 class="h2--medium">Pago</h3> <br>
+          <Tarjeta>
+            <h6>Agregar método de pago</h6>
+            <form @submit.prevent="agregarMetodoDePago">
+              <div class="form-group">
+                <br>
+                <input type="text" class="input__desk" id="nombre" placeholder="Nombre del titular"
+                  v-model="nuevoMetodo.nombre" required>
+              </div>
+              <hr>
+              <div class="form-group">
+                <div class="form-group">
+                  <br>
+                  <input type="text" placeholder="Número de tarjeta" class="input__desk" id="numero"
+                    v-model="nuevoMetodo.numero" required>
+                </div>
+                <div class="row my-3">
+                  <div class="col-lg-3 col-sm-12">
+                    <label for="tipo">Tipo de tarjeta</label> <br>
+                    <select id="tipo" class="input__desk" v-model="nuevoMetodo.tipo" required>
+                      <option value="Visa">Visa</option>
+                      <option value="MasterCard">MasterCard</option>
+                      <option value="American Express">American Express</option>
+                      <!-- Agrega otros tipos de tarjetas si es necesario -->
+                    </select>
+                  </div>
+                  <div class="col-lg-3 col-sm-12">
+                    <div class="form-group">
+                      <label for="fecha">Fecha de vencimiento</label> <br>
+                      <input type="text" id="fecha" class="input__desk" v-model="nuevoMetodo.fechaVencimiento"
+                        placeholder="MM/YY" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-12 d-flex justify-content-end">
+                    <div class="form-group">
+                      <label for="fecha">Número de seguridad</label> <br>
+                      <input type="text" id="fecha" class="input__desk" v-model="nuevoMetodo.numeroSeguridad"
+                        placeholder="   _ _ _ " required>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-12 d-flex justify-content-end">
+                    <button type="submit" class="btn__desk btn__desk-ok mt-4">Agregar tarjeta</button>
+                  </div>
+                </div>
+              </div>
+              <div class="d-grid pt-4">
+                <button type="submit" class="btn__desk text-center">Pago en efectivo</button>
+              </div>
+            </form>
+            <ul>
+              <li v-for="(metodo, index) in metodosDePago" :key="index">
+                {{ metodo.nombre }} ({{ metodo.tipo }}): {{ metodo.numero }} - Vencimiento: {{ metodo.fechaVencimiento
+                }}
+              </li>
+            </ul>
+          </Tarjeta>
+        </div>
+        <div style="height: 300px;"></div>
+        <!-- --------------------------------  Estado de elaboración  --------------------------------------------------------->
+        <div id="preparacion" style="padding-top: 100px;">
+          <Tarjeta class="text-center">
+            <h3 class="h2--medium">Su pedido está en camino</h3>
+            <div>
+              <!-- Botón "Confirmar pedido" -->
+              <button @click="confirmarPedido" type="submit" class="btn__desk btn__desk-ok me-2">Confirmar estado del
+                pedido</button>
 
-
+              <!-- Mensaje de confirmación -->
+              <div v-if="pedidoConfirmado">
+                <p class="p fw-bold pt-3">Tiempo estimado de <span class="text-success">30 minutos</span></p>
+              </div>
+            </div>
+          </Tarjeta>
+        </div>
+        <div style="height: 300px;"></div>
+        <!-- --------------------------------  Envío  --------------------------------------------------------->
+        <div id="envio" style="padding-top: 100px;">
+          <Tarjeta class="text-center">
+            <h3 class="h2--medium">Su pedido está en camino</h3>
+            <div>
+              <p class="p fw-bold pt-1">Tiempo estimado de llegada: <span class="text-success">30 minutos</span></p>
+              <button @click="enviarPedido" type="submit" class="btn__desk btn__desk-ok mt-4">Enviar a la dirección
+                especificada</button>
+            </div>
+          </Tarjeta>
+        </div>
+        <div style="height: 300px;"></div>
+      </div>
+    </div>
+  </main>
 </template>
 <script>
 export default {
@@ -180,6 +201,7 @@ export default {
         tipo: 'Visa',
         numero: '',
         fechaVencimiento: '',
+        numeroSeguridad: '',
       },
       metodosDePago: [], // Almacenar métodos de pago agregados
       pedidoConfirmado: false, // Estado para controlar la visibilidad del mensaje
@@ -199,7 +221,8 @@ export default {
         this.nuevoMetodo.nombre &&
         this.nuevoMetodo.tipo &&
         this.nuevoMetodo.numero &&
-        this.nuevoMetodo.fechaVencimiento
+        this.nuevoMetodo.fechaVencimiento &&
+        this.nuevoMetodo.numeroSeguridad
       ) {
         this.metodosDePago.push({ ...this.nuevoMetodo });
         this.nuevoMetodo = {
@@ -207,6 +230,7 @@ export default {
           tipo: 'Visa',
           numero: '',
           fechaVencimiento: '',
+          numeroSeguridad: ''
         };
       }
     },

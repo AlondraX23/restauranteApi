@@ -2,14 +2,14 @@
 import { RouterLink, RouterView } from 'vue-router';
 import Navbar from './components/Navbar.vue';
 import CarritoIcon from './components/icons/IconCarrito.vue'
-
+import Footer from './components/Footer.vue';
 
 </script>
 
 <template class="bg-blanco">
   <Navbar />
 
-  <main class="main__desk bg-blanco">
+  <main class="main__desk">
     <!-- <button class="btn__desk me-2">
       <p class="p p--white">ejemplo</p>
     </button>
@@ -36,7 +36,7 @@ import CarritoIcon from './components/icons/IconCarrito.vue'
     </button> -->
 
     <!-- Botones con icon -->
-    <!-- <button class="btn__desk--edit">
+    <!-- <button class="btn__desk--edit me-2">
       <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
           d="M22.4142 1.41421C21.6332 0.633165 20.3668 0.633166 19.5858 1.41421L18.6422 2.3578L22.6422 6.3578L23.5858 5.41421C24.3668 4.63316 24.3668 3.36684 23.5858 2.58579L22.4142 1.41421ZM17.8563 3.14374L21.8563 7.14374L6.13769 22.8624L2.13769 18.8624L17.8563 3.14374ZM5.35175 23.6483L1.35175 19.6483L0.708334 23.7198C0.655334 24.0552 0.944875 24.3448 1.28025 24.2918L5.35175 23.6483Z"
@@ -104,14 +104,8 @@ import CarritoIcon from './components/icons/IconCarrito.vue'
       <option value="2">Two</option>
       <option value="3">Three</option>
     </select> -->
-
-
-
-
-
-
-
   </main>
+  <Footer class=""></Footer>
 
   <!-- <RouterView /> -->
 </template>
@@ -141,15 +135,30 @@ import CarritoIcon from './components/icons/IconCarrito.vue'
 
 } */
 
+body {
+  background-color: var(--neutro-3);
+}
+
 .bg-blanco {
   background-color: var(--neutro-3);
+}
+
+.bg-secundario {
+  background-color: var(--secundario);
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
 @media (min-width: 1024px) {
   .main__desk {
     margin-left: 144px;
     margin-right: 144px;
-    margin-top: 100px;
+    margin-top: 50px;
+    min-height: 24vh;
     background-color: var(--neutro-3);
   }
 }

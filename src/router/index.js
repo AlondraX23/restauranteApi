@@ -38,6 +38,16 @@ const router = createRouter({
       path: '/perfil',
       name: 'perfil',
       component: () => import('../views/PerfilView.vue')
+    },
+    {
+      path: '/entregas',
+      name: 'entregas',
+      component: () => import('../views/EntregasView.vue')
+    },
+    {
+      path: '/inicio',
+      name: 'inicio',
+      component: () => import('../views/InicioView.vue')
     }
   ]
 })

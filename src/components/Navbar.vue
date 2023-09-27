@@ -38,14 +38,16 @@ import CarritoIcon from './icons/IconCarrito.vue'
 </template>
 
 <style>
-  @media (max-width: 991.98px) {
-    main {
-      margin: 100px 32px 0px 32px;
-    }
-    #icon_carrito {
-      padding: 8px 0px 10px 0px;
-    }
+@media (max-width: 991.98px) {
+  main {
+    margin: 100px 32px 0px 32px;
   }
+
+  #icon_carrito {
+    padding: 8px 0px 10px 0px;
+  }
+}
+
 .nb-brand {
   color: var(--neutro-3);
   font-family: 'Inter', sans-serif;
