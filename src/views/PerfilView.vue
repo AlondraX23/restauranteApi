@@ -55,7 +55,9 @@ onMounted(() => {
                 <div class="col-8 text-start p-0">
                     <ul>
                         <li class="p py-2" id="user-li">
-                            <UserIcon class="my-2 me-2" /> {{ user.name }}
+                            <RouterLink to="/login" class="link-underline link-underline-opacity-0">
+                                <UserIcon class="my-2 me-2" /> {{ user.name }}
+                            </RouterLink>
                         </li>
                         <li class="p py-2" id="sobre-li">
                             <SobreIcon class="icon-black my-2 pe-1" /> {{ user.email }}

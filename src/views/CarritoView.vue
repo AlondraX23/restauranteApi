@@ -22,7 +22,7 @@ import IconUsuarioCirculo from '../components/icons/IconUsuarioCirculo.vue';
                             <p class="p">Entregas</p>
                         </button>
                     </RouterLink>
-                    <RouterLink to="/perfil" class="link-underline link-underline-opacity-0">
+                    <RouterLink to="/inicio" class="link-underline link-underline-opacity-0">
                         <IconUsuarioCirculo class="icon-black"/>
                     </RouterLink>
                 </div>
