@@ -7,12 +7,12 @@ import Tarjeta from '../components/Tarjeta.vue';
     <main class="main__desk">
         <Tarjeta style="width: 22rem;" class="mx-auto">
             <form class="vstack">
-                <label for="correo" class="h3">
+                <label for="correo" class="p fw-bolder">
                     Usuario
                     <input type="email" id="correo" class="input__desk">
                     <br>
                 </label>
-                <label for="contraseña" class="h3">
+                <label for="contraseña" class="p fw-bolder">
                     Contraseña
                     <input type="password" id="contraseña" class="input__desk">
                 </label>
