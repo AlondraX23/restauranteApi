@@ -106,6 +106,11 @@ console.log(users.email)
 </template>
 
 <style>
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/* ---- */
+
 .modal {
     .modal-content {
         border: 0;

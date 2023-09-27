@@ -118,8 +118,9 @@ import Tarjeta from '../components/Tarjeta.vue';
                 </div>
                 <div class="row my-3">
                   <div class="col-lg-3 col-sm-12">
-                    <label for="tipo">Tipo de tarjeta</label> <br>
+                    <br>
                     <select id="tipo" class="input__desk" v-model="nuevoMetodo.tipo" required>
+                      <option selected>Tipo de tarjeta</option>
                       <option value="Visa">Visa</option>
                       <option value="MasterCard">MasterCard</option>
                       <option value="American Express">American Express</option>
@@ -128,6 +129,7 @@ import Tarjeta from '../components/Tarjeta.vue';
                   </div>
                   <div class="col-lg-3 col-sm-12">
                     <div class="form-group">
+                      <br>
                       <label for="fecha">Fecha de vencimiento</label> <br>
                       <input type="text" id="fecha" class="input__desk" v-model="nuevoMetodo.fechaVencimiento"
                         placeholder="MM/YY" required>
@@ -161,11 +163,10 @@ import Tarjeta from '../components/Tarjeta.vue';
         <!-- --------------------------------  Estado de elaboración  --------------------------------------------------------->
         <div id="preparacion" style="padding-top: 100px;">
           <Tarjeta class="text-center">
-            <h3 class="h2--medium">Su pedido está en camino</h3>
+            <h3 class="h2--medium">Estado de elaboración</h3>
             <div>
               <!-- Botón "Confirmar pedido" -->
-              <button @click="confirmarPedido" type="submit" class="btn__desk btn__desk-ok me-2">Confirmar estado del
-                pedido</button>
+              <button @click="confirmarPedido" type="submit" class="btn__desk btn__desk-ok me-2">Confirmar estado</button>
 
               <!-- Mensaje de confirmación -->
               <div v-if="pedidoConfirmado">
@@ -178,9 +179,11 @@ import Tarjeta from '../components/Tarjeta.vue';
         <!-- --------------------------------  Envío  --------------------------------------------------------->
         <div id="envio" style="padding-top: 100px;">
           <Tarjeta class="text-center">
-            <h3 class="h2--medium">Su pedido está en camino</h3>
+            <h3 class="h2--medium">Envío</h3>
+              <div>
+            <p class="p fw-bold pt-1">Tiempo estimado de llegada: <span class="text-success">30 minutos</span></p>
+            </div>
             <div>
-              <p class="p fw-bold pt-1">Tiempo estimado de llegada: <span class="text-success">30 minutos</span></p>
               <button @click="enviarPedido" type="submit" class="btn__desk btn__desk-ok mt-4">Enviar a la dirección
                 especificada</button>
             </div>
