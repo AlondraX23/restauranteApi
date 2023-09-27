@@ -25,7 +25,7 @@ import { ref } from 'vue'
     <div class="position-relative m-4" id="barra">
         <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0"
             aria-valuemax="100" style="height: 8px;">
-            <div ref="ancho" id="progress-bar" class="progress-bar bg-primario" style="width: 18%"></div>
+            <div ref="ancho" id="progress-bar" class="progress-bar bg-primario" style="width: 100%"></div>
         </div>
         <a class="nav-link" href="#ubicacion">
             <button type="button" onclick="ubicacion" class="position-absolute top-0 start-1 translate-middle punto"
