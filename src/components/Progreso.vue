@@ -4,35 +4,50 @@ import MapaIcon from './icons/IconMapa.vue'
 import BilletesIcon from './icons/IconBilletes.vue'
 import OllaIcon from './icons/IconOlla.vue'
 import CarritoEnvioIcon from './icons/IconCarritoEnvio.vue'
+import { ref } from 'vue'
 
+// //Seleccionar el div
+// const ancho = this.$refs.myElement;
+// // console.log(ancho.style.width)
 
+// function ubicacion(ancho) {
+//     let uno = 50;
+//     ancho.style.width = "50%";
+// }
 
+// function salir() {
+//     // console.log("redirigiendo")
+//     setTimeout(salir, 5000);
+// }
 </script>
 
 <template>
     <div class="position-relative m-4" id="barra">
         <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0"
             aria-valuemax="100" style="height: 8px;">
-            <div class="progress-bar bg-primario" style="width: 18%"></div>
+            <div ref="ancho" id="progress-bar" class="progress-bar bg-primario" style="width: 18%"></div>
         </div>
         <a class="nav-link" href="#ubicacion">
-            <button type="button" class="position-absolute top-0 start-1 translate-middle punto"
+            <button type="button" onclick="ubicacion" class="position-absolute top-0 start-1 translate-middle punto"
                 style="width: 80px; height:80px;">
                 <MapaIcon class="color_icon" />
             </button>
-        </a>      
+        </a>
         <a class="nav-link" href="#pago">
-            <button type="button" class="position-absolute top-0 start-2 translate-middle" style="width: 80px; height:80px;">
+            <button type="button" class="position-absolute top-0 start-2 translate-middle"
+                style="width: 80px; height:80px;">
                 <BilletesIcon class="color_icon" />
             </button>
         </a>
         <a class="nav-link" href="#preparacion">
-            <button type="button" class="position-absolute top-0 start-3 translate-middle" style="width: 80px; height:80px;">
+            <button type="button" class="position-absolute top-0 start-3 translate-middle"
+                style="width: 80px; height:80px;">
                 <OllaIcon class="color_icon" />
             </button>
         </a>
         <a class="nav-link" href="#envio">
-            <button type="button" class="position-absolute top-0 start-4 translate-middle" style="width: 80px; height:80px;">
+            <button onclick="salir()" type="button" class="position-absolute top-0 start-4 translate-middle"
+                style="width: 80px; height:80px;">
                 <CarritoEnvioIcon class="color_icon" />
             </button>
         </a>
@@ -81,5 +96,4 @@ button:hover {
     width: 100%;
     left: 100%;
 }
-
 </style>

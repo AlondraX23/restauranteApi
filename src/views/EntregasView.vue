@@ -64,7 +64,7 @@ console.log(users.address)
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5 h3" id="exampleModalLabel">¿Es correcta la siguiente dirección?
+                        <h1 class="modal-title fs-5 p" id="exampleModalLabel">¿Es correcta la siguiente dirección?
                         </h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>

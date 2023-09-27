@@ -45,7 +45,7 @@ onMounted(() => {
                         </button>
                     </RouterLink>
                     <RouterLink to="/perfil" class="link-underline link-underline-opacity-0">
-                        <IconUsuarioCirculo class="icon-dorado"/>
+                        <IconUsuarioCirculo class="icon-dorado" />
                     </RouterLink>
                 </div>
             </Tarjeta>
@@ -54,14 +54,14 @@ onMounted(() => {
             <div class="row">
                 <div class="col-8 text-start p-0">
                     <ul>
-                        <li class="h3 py-2">
-                            <UserIcon class="my-2 me-2" /> <span>{{ user.name }}</span>
+                        <li class="p py-2" id="user-li">
+                            <UserIcon class="my-2 me-2" /> {{ user.name }}
                         </li>
-                        <li class="h3 py-2">
-                            <SobreIcon class="icon-black my-2 pe-1" /> <span>{{ user.email }}</span>
+                        <li class="p py-2" id="sobre-li">
+                            <SobreIcon class="icon-black my-2 pe-1" /> {{ user.email }}
                         </li>
-                        <li class="h3 py-2">
-                            <MapaIcon class="icon-black my-2 me-2" /> <span>{{ user.address }}</span>
+                        <li class="p py-2" id="mapa-li">
+                            <MapaIcon class="icon-black my-2 me-2" /> {{ user.address }}
                         </li>
                     </ul>
                 </div>
@@ -120,16 +120,16 @@ onMounted(() => {
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5 h3" id="exampleModalLabel">¿Está seguro de eliminar su cuenta?</h1>
+                        <h1 class="modal-title fs-5 p" id="exampleModalLabel">¿Está seguro de eliminar su cuenta?</h1>
                         <button type="button" class="button btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-footer">
-                        <RouterLink to="/inicio">
-                            <button type="button" class="button btn__desk btn__desk--outline-no" data-bs-dismiss="modal">
+                        <RouterLink to="/inicio" class="link-underline link-underline-opacity-0">
+                            <button type="button" class="btn__desk btn__desk--outline-no" data-bs-dismiss="modal">
                                 <p class="p">Sí</p>
                             </button>
                         </RouterLink>
-                        <button type="button" class="button btn__desk btn__desk-ok" data-bs-dismiss="modal">
+                        <button type="button" class="btn__desk btn__desk-ok" data-bs-dismiss="modal">
                             <p class="p p--white">No, regresar al</p>
                         </button>
                     </div>
@@ -171,6 +171,7 @@ ul {
     p {
         margin: 0;
     }
+
     border-color: var(--neutro-2);
 }
 </style>
